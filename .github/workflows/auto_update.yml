@@ -1,0 +1,22 @@
+name: Auto-Update G8 News Wire
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python updater.py
+      - run: |
+          git config user.name "G8-News-Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add feed.json
+          git commit -m "Update live G8 news feed" || exit 0
+          git push
