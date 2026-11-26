@@ -1,827 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
-        window.__firebase_config = firebaseConfig;
-        window.__initial_auth_token = initialAuthToken;
-        window.__app_id = appId;
-            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNzk3OTg5MjU3MzIwNjc5MjY1MyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzI0NWM0YTA2MmU4YzFjY2VfZzhfZ29sZF9uZXdzX3Rlcm1pbmFsLmh0bWwtMzcifSwiZXhwIjoxNzk1Njk3MTQ4LCJpYXQiOjE3OTU2OTM1NDgsImFsZyI6IlJTMjU2In0.Gt-9QMIsTlr4pmBXCkDCXYhZqoRi_Dc5YacPr6lTuShrg8beq1X7eqdBjVaI1PjCh_mHG-aiIA8ObDfiP9NQV8s2L1je4UZKdSiCmNx6vr1VLqUB4Cn2l9ijD3gTBS5qbYLL7cpBGW2cbRYhSnAtzlP1wg6G9cLmMC5mQyYV1uWwC3sihj1QUB0JrnafsbGEAxlWa_fxb5P-T9trAPKAlyPZvtCXtdvH6INrL4YBWxh994MelZPYOG5r_RGtT6tHIelcpuizEFjck6bFC_eIlL-mbBb_Jj0UwXiarodMAYcQkmAOJ9e8VfFPLgvC_dB0s2YfpSzYSU3oabaLNvlrLg","c_245c4a062e8c1cce_g8_gold_news_terminal.html-37")</script><script data-bard-client-injected="true">
-  document.addEventListener('input', (event) => {
-    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
-      const clonedDoc = document.cloneNode(true);
-      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
-      injectedScripts.forEach(el => el.remove());
-      window.parent.postMessage({
-        type: 'inlineEdit',
-        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
-      }, '*');
-    }
-  });
-</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
-</script><script data-bard-client-injected="true">(function() {
-  const SCROLL_KEYS = new Set([
-    'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
-    ' ', 'Spacebar', 'PageUp', 'PageDown', 'Home', 'End',
-  ]);
-  const HORIZONTAL_KEYS = new Set(['ArrowLeft', 'ArrowRight']);
-
-  function isTextEntryTarget(target) {
-    if (!target) return false;
-    const tagName = target.tagName;
-    return tagName === 'INPUT' || tagName === 'TEXTAREA' ||
-        tagName === 'SELECT' || target.isContentEditable === true;
-  }
-
-  // An element absorbs the key only if it both overflows on the axis being
-  // scrolled and is configured to scroll on that axis. The cheap dimension
-  // test runs first because getComputedStyle forces a style recalc, and this
-  // runs on every keypress. Each axis is read from its own longhand: the
-  // 'overflow' shorthand serializes as two values when the axes differ, which
-  // is the common 'overflow-x: hidden; overflow-y: auto' pane.
-  function canScroll(node, horizontal) {
-    const overflows = horizontal ? node.scrollWidth > node.clientWidth
-                                 : node.scrollHeight > node.clientHeight;
-    if (!overflows) return false;
-    const style = window.getComputedStyle(node);
-    const overflow = horizontal ? style.overflowX : style.overflowY;
-    return overflow === 'auto' || overflow === 'scroll';
-  }
-
-  // Walks up from the event target so nested scrollers keep their behavior.
-  // <body> is included because pages that pin the root height make it the
-  // scroll container.
-  function hasScrollableAncestor(target, horizontal) {
-    let node = target;
-    while (node && node !== document.documentElement) {
-      if (canScroll(node, horizontal)) return true;
-      node = node.parentElement;
-    }
-    return false;
-  }
-
-  function rootCanScroll(horizontal) {
-    const scroller = document.scrollingElement || document.documentElement;
-    if (!scroller) return false;
-    // Tolerate a pixel of rounding so subpixel layouts do not look scrollable.
-    return horizontal ? scroller.scrollWidth > window.innerWidth + 1
-                      : scroller.scrollHeight > window.innerHeight + 1;
-  }
-
-  window.addEventListener('keydown', function(event) {
-    if (!SCROLL_KEYS.has(event.key)) return;
-    if (event.defaultPrevented) return;
-    // Alt and Meta turn arrows into browser history navigation, and Ctrl is
-    // reserved for shortcuts, so none of them are scroll intent.
-    if (event.altKey || event.metaKey || event.ctrlKey) return;
-
-    const target = event.target;
-    if (isTextEntryTarget(target)) return;
-
-    // Anything that can still absorb the scroll gets to keep it.
-    const horizontal = HORIZONTAL_KEYS.has(event.key);
-    if (rootCanScroll(horizontal)) return;
-    if (hasScrollableAncestor(target, horizontal)) return;
-
-    event.preventDefault();
-  }, {capture: true, passive: false});
-})();</script><script data-bard-client-injected="true">(function() {
-  // Ensure this script is executed only once
-  if (window.firebaseAuthBridgeScriptLoaded) {
-    return;
-  }
-  window.firebaseAuthBridgeScriptLoaded = true;
-
-  let nextTokenPromiseId = 0;
-
-  // Stores { resolve, reject } for ongoing token requests
-  const pendingTokenPromises = {};
-
-  // Listen for messages from the Host Application
-  window.addEventListener('message', function(event) {
-
-    const messageData = event.data;
-
-  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
-      const { success, token, error, promiseId } = messageData ?? {};
-      if (pendingTokenPromises[promiseId]) {
-        if (success) {
-          pendingTokenPromises[promiseId].resolve(token);
-        } else {
-          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
-        }
-        delete pendingTokenPromises[promiseId];
-      }
-    }
-  });
-
-  // Expose a function for the Generated App to request a new Firebase token
-  window.requestNewFirebaseToken = function() {
-    const currentPromiseId = nextTokenPromiseId++;
-    const promise = new Promise((resolve, reject) => {
-      pendingTokenPromises[currentPromiseId] = { resolve, reject };
-    });
-    if (window.parent && window.parent !== window) {
-      window.parent.postMessage({
-        type: 'REQUEST_NEW_FIREBASE_TOKEN',
-        promiseId: currentPromiseId
-      }, '*');
-    } else {
-      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
-      delete pendingTokenPromises[currentPromiseId];
-    }
-    return promise;
-  };
-})();</script><script data-bard-client-injected="true">
-let realOriginalGetUserMedia = null;
-if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
-}
-
-(function() {
-  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
-    try {
-      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
-        get: function() {
-          return undefined; // Or throw an error
-        },
-        configurable: false
-      });
-    } catch (error) {
-      console.error("Error defining prototype getter:", error);
-    }
-  }
-})();
-
-(function() {
-  const pendingMediaResolvers = {};
-  let nextMediaPromiseId = 0;
-
-  function requestMediaPermissions(constraints) {
-    const mediaPromiseId = nextMediaPromiseId++;
-    const promise = new Promise((resolve, reject) => {
-      pendingMediaResolvers[mediaPromiseId] = (granted) => {
-        delete pendingMediaResolvers[mediaPromiseId];
-        resolve(granted);
-      };
-    });
-
-    window.parent.postMessage({
-      type: 'requestMediaPermission',
-      constraints: constraints,
-      promiseId: mediaPromiseId,
-    }, '*');
-
-    return promise;
-  }
-
-  let originalGetUserMedia = realOriginalGetUserMedia;
-
-  function interceptGetUserMedia() {
-    if (navigator.mediaDevices) {
-      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
-        value: function(constraints) {
-          return requestMediaPermissions(constraints).then((granted) => {
-            if (granted) {
-              if (originalGetUserMedia) {
-                return originalGetUserMedia(constraints);
-              } else {
-                throw new Error("Original getUserMedia not available.");
-              }
-            } else {
-              throw new DOMException('Permission denied', 'NotAllowedError');
-            }
-          });
-        },
-        writable: false,
-        configurable: false
-      });
-    }
-  }
-
-  interceptGetUserMedia();
-
-  const observer = new MutationObserver(function(mutationsList, observer) {
-    for (const mutation of mutationsList) {
-      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
-        interceptGetUserMedia();
-      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
-        interceptGetUserMedia();
-      } else if (mutation.type === 'childList' && mutation.addedNodes) {
-        mutation.addedNodes.forEach(node => {
-          if (node === navigator.mediaDevices) {
-            interceptGetUserMedia();
-          }
-        });
-      }
-    }
-  });
-
-  function interceptSpeechRecognition() {
-    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
-      return;
-    }
-
-    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-    const SpeechRecognitionWrapper = function(...args) {
-      const recognizer = new OriginalSpeechRecognition(...args);
-      const originalStart = recognizer.start.bind(recognizer);
-
-      recognizer.start = function() {
-        requestMediaPermissions({ audio: true }).then(granted => {
-          if (granted) {
-            originalStart();
-          } else {
-            const errorEvent = new SpeechRecognitionErrorEvent('error');
-            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
-            recognizer.dispatchEvent(errorEvent);
-          }
-        });
-      };
-
-      return recognizer;
-    };
-
-    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
-    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
-
-    if (window.SpeechRecognition) {
-      window.SpeechRecognition = SpeechRecognitionWrapper;
-    }
-    if (window.webkitSpeechRecognition) {
-      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
-    }
-  }
-
-  interceptSpeechRecognition();
-
-  window.addEventListener('message', function(event) {
-    if (event.data) {
-      if (event.data.type === 'resolveMediaPermission') {
-        const { promiseId, granted } = event.data;
-        if (pendingMediaResolvers[promiseId]) {
-          pendingMediaResolvers[promiseId](granted);
-        }
-      }
-    }
-  });
-
-})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
-function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
-
- Copyright The Closure Library Authors.
- SPDX-License-Identifier: Apache-2.0
-*/
-function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
-let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
-null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
-G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
-16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
-(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
-(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
-url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
-</script><script data-bard-client-injected="true">((function(modelInformation) {
-  const originalFetch = window.fetch;
-  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
-  let googleLlmBaseApiUrls = [
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
-  ];
-  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
-    googleLlmBaseApiUrls.push(
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
-    );
-  });
-  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
-    googleLlmBaseApiUrls.push(
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
-    );
-  });
-  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
-    googleLlmBaseApiUrls.push(
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
-    );
-  });
-  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
-    googleLlmBaseApiUrls.push(
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
-    );
-  });
-
-  const pendingFetchResolvers = {};
-  let nextPromiseId = 0;
-
-  function handleStringInput(input, optionsArgument) {
-    const actualUrl = input;
-    const fetchCallArgs = [actualUrl, optionsArgument];
-    const effectiveOptions = optionsArgument || {};
-    const bodyForApiKeyCheck = effectiveOptions.body;
-    const bodyForPostMessage = effectiveOptions.body;
-    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
-  }
-
-  function handleRequestInput(input, optionsArgument) {
-    const actualUrl = input.url;
-    const fetchCallArgs = [input, optionsArgument];
-    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
-    let bodyForApiKeyCheck;
-    let bodyForPostMessage;
-
-    if (optionsArgument) {
-      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
-      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
-      if ('body' in optionsArgument) {
-        bodyForApiKeyCheck = optionsArgument.body;
-        bodyForPostMessage = optionsArgument.body;
-      } else {
-        bodyForApiKeyCheck = undefined;
-        bodyForPostMessage = input.body;
-      }
-    } else {
-      bodyForApiKeyCheck = undefined;
-      bodyForPostMessage = input.body;
-    }
-    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
-  }
-
-  window.fetch = function(input, optionsArgument) {
-    let actualUrl;
-    let fetchCallArgs;
-    let effectiveOptions = {};
-    let bodyForApiKeyCheck;
-    let bodyForPostMessage;
-
-    if (typeof input === 'string') {
-      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
-    } else if (input instanceof Request) {
-      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
-    } else {
-      return originalFetch.apply(window, [input, optionsArgument]);
-    }
-
-    effectiveOptions.method = effectiveOptions.method || 'GET';
-    if (!effectiveOptions.headers) {
-      effectiveOptions.headers = new Headers();
-    }
-
-
-    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
-      let apiKeyIsNull = true;
-
-      const regex = new RegExp("models/([^:]+)");
-      const modelNameMatch = actualUrl.match(regex);
-      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
-
-
-      try {
-        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
-        const apiKeyParam = urlObject.searchParams.get('key');
-        if (apiKeyParam) {
-          apiKeyIsNull = false;
-        }
-      } catch (e) {
-        // Continue checks even if URL parsing fails
-      }
-
-      if (apiKeyIsNull && effectiveOptions.headers) {
-        const h = new Headers(effectiveOptions.headers);
-        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
-        if (apiKeyHeaderValue) {
-          apiKeyIsNull = false;
-          return originalFetch.apply(window, fetchCallArgs);
-        }
-      }
-
-      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
-        try {
-          const bodyData = JSON.parse(bodyForApiKeyCheck);
-          if (bodyData && bodyData.apiKey) {
-            apiKeyIsNull = false;
-            return originalFetch.apply(window, fetchCallArgs);
-          }
-        } catch (e) {
-          // Ignore JSON parsing errors
-        }
-      }
-
-      if(apiKeyIsNull) {
-        const promiseId = nextPromiseId++;
-        const promise = new Promise((resolve) => {
-          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
-            delete pendingFetchResolvers[promiseId];
-            resolve(resolvedResponse);
-          };
-        });
-
-        let serializedBodyForPostMessage;
-        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
-            serializedBodyForPostMessage = bodyForPostMessage;
-        } else if (bodyForPostMessage instanceof ReadableStream) {
-            serializedBodyForPostMessage = null;
-        } else {
-            try {
-                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
-            } catch (e) {
-                serializedBodyForPostMessage = null;
-            }
-        }
-
-        const messageOptions = {
-            method: effectiveOptions.method,
-            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
-            body: serializedBodyForPostMessage
-        };
-
-        window.parent.postMessage({
-          type: 'requestFetch',
-          url: actualUrl,
-          modelName: modelName,
-          options: messageOptions,
-          promiseId: promiseId,
-        }, '*');
-
-        return promise;
-      }
-      return originalFetch.apply(window, fetchCallArgs);
-    }
-    return originalFetch.apply(window, fetchCallArgs);
-  };
-
-  window.addEventListener('message', function(event) {
-    if (event.data && event.data.type === 'resolveFetch') {
-      const { promiseId, response } = event.data;
-      if (pendingFetchResolvers[promiseId]) {
-        try {
-          const reconstructedResponse = new Response(response.body, {
-            status: response.status,
-            statusText: response.statusText,
-            headers: new Headers(response.headers),
-          });
-          pendingFetchResolvers[promiseId](reconstructedResponse);
-        } catch (error) {
-          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
-        }
-      }
-    }
-  });
-
-}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
-  const OVERLAY_SELECTOR =
-    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
-
-  function isVisibleOverlay(element) {
-    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
-      return false;
-    }
-    if (window.getComputedStyle(element).visibility === 'hidden') {
-      return false;
-    }
-    for (let cur = element; cur; cur = cur.parentElement) {
-      if (window.getComputedStyle(cur).display === 'none') {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  function hasOpenOverlay() {
-    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
-    for (let i = 0; i < candidates.length; i++) {
-      if (isVisibleOverlay(candidates[i])) {
-        return true;
-      }
-    }
-    try {
-      if (document.querySelector('[popover]:popover-open')) {
-        return true;
-      }
-    } catch (e) {
-      // Ignore engines that do not support :popover-open.
-    }
-    return false;
-  }
-
-  function isNonEmptySearchInput(target) {
-    return (
-      Boolean(target) &&
-      target.tagName === 'INPUT' &&
-      typeof target.type === 'string' &&
-      target.type.toLowerCase() === 'search' &&
-      typeof target.value === 'string' &&
-      target.value.length > 0
-    );
-  }
-
-  function shouldIgnoreEscape(event) {
-    return (
-      event.key !== 'Escape' ||
-      event.altKey ||
-      event.ctrlKey ||
-      event.metaKey ||
-      event.shiftKey ||
-      event.isComposing ||
-      event.repeat ||
-      event.keyCode === 229 ||
-      isNonEmptySearchInput(event.target)
-    );
-  }
-
-  let shouldIgnoreCaptureState = false;
-
-  window.addEventListener(
-    'keydown',
-    function(event) {
-      if (event.key === 'Escape') {
-        shouldIgnoreCaptureState =
-          hasOpenOverlay() || isNonEmptySearchInput(event.target);
-      }
-    },
-    {capture: true},
-  );
-
-  window.addEventListener('keydown', function(event) {
-    if (
-      shouldIgnoreEscape(event) ||
-      event.defaultPrevented ||
-      shouldIgnoreCaptureState
-    ) {
-      return;
-    }
-    const wasBlockedOnCapture = shouldIgnoreCaptureState;
-    queueMicrotask(function() {
-      if (event.defaultPrevented || wasBlockedOnCapture) {
-        return;
-      }
-      if (window.parent && window.parent !== window) {
-        window.parent.postMessage({'type': 'escapeKey'}, '*');
-      }
-    });
-  });
-})();</script><script data-bard-client-injected="true">(function() {
-  function normalizeSlug(str) {
-    try {
-      return str
-        .trim()
-        .toLowerCase()
-        .replace(/[^p{L}p{N}s_-]/gu, '')
-        .replace(/s+/g, '-');
-    } catch (e) {
-      return str
-        .trim()
-        .toLowerCase()
-        .replace(/[^a-z0-9s_-]/g, '')
-        .replace(/s+/g, '-');
-    }
-  }
-
-  function findTargetElement(hash) {
-    if (!hash || hash === '#') {
-      return null;
-    }
-    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
-    let decodedId = rawId;
-    try {
-      decodedId = decodeURIComponent(rawId);
-    } catch (e) {
-      // Ignore URI malformed errors.
-    }
-
-    // 1. Direct ID match (raw and decoded).
-    let target = document.getElementById(rawId) || document.getElementById(decodedId);
-    if (target) {
-      return target;
-    }
-
-    // 2. Name attribute match (<a name="...">).
-    try {
-      if (typeof CSS !== 'undefined' && CSS.escape) {
-        target =
-          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
-          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
-      } else {
-        const namedElements = document.getElementsByName(rawId);
-        if (namedElements && namedElements.length > 0) {
-          return namedElements[0];
-        }
-      }
-    } catch (e) {
-      // Ignore querySelector syntax errors.
-    }
-    if (target) {
-      return target;
-    }
-
-    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
-    const targetSlug = normalizeSlug(decodedId);
-    if (targetSlug) {
-      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
-        if (normalizeSlug(heading.textContent || '') === targetSlug) {
-          return heading;
-        }
-      }
-    }
-
-    return null;
-  }
-
-  document.addEventListener('click', function(event) {
-    const target = event.target;
-    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
-    if (!anchor) {
-      return;
-    }
-
-    const href = anchor.getAttribute('href');
-    if (
-      !href ||
-      href.trim().toLowerCase().startsWith('javascript:') ||
-      anchor.hasAttribute('download')
-    ) {
-      return;
-    }
-
-    // Check if the link is an in-page hash / anchor link.
-    if (href.startsWith('#')) {
-      event.preventDefault();
-      const targetElement = findTargetElement(href);
-      if (targetElement) {
-        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
-      }
-      return;
-    }
-
-    // Check if the URL has the same origin/pathname but with a hash.
-    try {
-      const url = new URL(anchor.href, window.location.href);
-      if (
-        url.hash &&
-        url.origin === window.location.origin &&
-        url.pathname === window.location.pathname
-      ) {
-        event.preventDefault();
-        const targetElement = findTargetElement(url.hash);
-        if (targetElement) {
-          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
-        }
-        return;
-      }
-    } catch (e) {
-      // Fall through if URL parsing fails.
-    }
-
-    // For all external or full navigation links, prevent iframe-level navigation
-    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
-    // safely in a new tab/window.
-    if (anchor.target !== '_blank') {
-      event.preventDefault();
-      window.open(anchor.href, '_blank', 'noopener,noreferrer');
-    }
-  }, {capture: true});
-})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
-</script><script data-bard-client-injected="true">(function() {
-  const originalConsoleLog = console.log;
-  const originalConsoleError = console.error;
-
-    /**
-   * Normalizes an error event or a promise rejection reason into a structured error object.
-   * @param {*} errorEventOrReason The error object or reason.
-   * @return {object} Structured error data { message, name, stack }.
-   */
-  function getErrorObject(errorEventOrReason) {
-    if (errorEventOrReason instanceof Error) {
-      return {
-        message: errorEventOrReason.message,
-        name: errorEventOrReason.name,
-        stack: errorEventOrReason.stack,
-      };
-    }
-    // Fallback for non-Error objects.
-    try {
-      return {
-        message: JSON.stringify(errorEventOrReason),
-        name: 'UnknownErrorType',
-        stack: null,
-      };
-    } catch (e) {
-      return {
-        message: String(errorEventOrReason),
-        name: 'UnknownErrorTypeNonStringifiable',
-        stack: null,
-      };
-    }
-  }
-
-  /**
-   * Converts an array of arguments (from log/error) into a single string.
-   * Handles Error objects specially to include their message and stack.
-   * @param {Array<*>} args - Arguments passed to console methods.
-   * @return {string} A string representation of the arguments.
-   */
-  function stringifyArgs(args) {
-    return args
-      .map((arg) => {
-        if (arg instanceof Error) {
-          const {message, stack} = arg;
-          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
-        }
-        if (typeof arg === 'object' && arg !== null) {
-          try {
-            return JSON.stringify(arg);
-          } catch (error) {
-            return '[Circular Object]';
-          }
-        } else {
-          return String(arg);
-        }
-      })
-      .join(' ');
-  }
-
-  console.log = function(...args) {
-    const logString = stringifyArgs(args);
-    window.parent.postMessage({ type: 'log', message: logString }, '*');
-    originalConsoleLog.apply(console, args);
-  };
-
-  console.error = function(...args) {
-    let errorData;
-    if (args.length > 0 && args[0] instanceof Error) {
-      const err = args[0];
-      // If the first arg is an Error, capture its details.
-      errorData = {
-        type: 'error',
-        source: 'CONSOLE_ERROR',
-        ...getErrorObject(err),
-        rawArgsString: stringifyArgs(args.slice(1)),
-        timestamp: new Date().toISOString(),
-      };
-    } else {
-      // If not an Error object, treat all args as a general error message.
-      errorData = {
-        type: 'error',
-        source: 'CONSOLE_ERROR',
-        message: stringifyArgs(args),
-        name: 'ConsoleLoggedError',
-        stack: null,
-        timestamp: new Date().toISOString(),
-      };
-    }
-    window.parent.postMessage(errorData, '*');
-    originalConsoleError.apply(console, args);
-  };
-
-  // Listen for global unhandled synchronous errors.
-  window.addEventListener('error', function(event) {
-    const errorDetails = event.error ? getErrorObject(event.error) : {
-      message: event.message,
-      name: 'GlobalError',
-      stack: null,
-      filename: event.filename,
-      lineno: event.lineno,
-      colno: event.colno,
-    };
-
-    window.parent.postMessage({
-      type: 'error',
-      source: 'global',
-      ...errorDetails,
-      message: errorDetails.message || event.message,
-      timestamp: new Date().toISOString(),
-    }, '*');
-  });
-
-  // Listen for unhandled promise rejections (asynchronous errors).
-  window.addEventListener('unhandledrejection', function(event) {
-    const errorDetails = getErrorObject(event.reason);
-
-    window.parent.postMessage({
-      type: 'error',
-      source: 'unhandledrejection',
-      ...errorDetails,
-      message: errorDetails.message || 'Unhandled Promise Rejection',
-      timestamp: new Date().toISOString(),
-    }, '*');
-  });
-
-})();</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>G8 Institutional News Wire — Central Banks, Geopolitics &amp; ING Research</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -860,7 +46,7 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
     ::-webkit-scrollbar-track { background: #060913; }
     ::-webkit-scrollbar-thumb { background: #334155; border-radius: 9999px; }
   </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.sticky{position:sticky}.inset-0{inset:0px}.top-0{top:0px}.z-40{z-index:40}.z-50{z-index:50}.mx-1{margin-left:0.25rem;margin-right:0.25rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-0\.5{margin-bottom:0.125rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.line-clamp-3{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}.line-clamp-5{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.max-h-\[90vh\]{max-height:90vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-2\.5{gap:0.625rem}.gap-3\.5{gap:0.875rem}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded{border-radius:0.25rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-l-4{border-left-width:4px}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.border-indigo-500\/30{border-color:rgb(99 102 241 / 0.3)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-rose-500\/30{border-color:rgb(244 63 94 / 0.3)}.border-sky-400{--tw-border-opacity:1;border-color:rgb(56 189 248 / var(--tw-border-opacity, 1))}.border-sky-500\/30{border-color:rgb(14 165 233 / 0.3)}.border-slate-800\/90{border-color:rgb(30 41 59 / 0.9)}.border-emerald-500\/40{border-color:rgb(16 185 129 / 0.4)}.border-l-emerald-500{--tw-border-opacity:1;border-left-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-l-sky-500{--tw-border-opacity:1;border-left-color:rgb(14 165 233 / var(--tw-border-opacity, 1))}.bg-\[\#060913\]{--tw-bg-opacity:1;background-color:rgb(6 9 19 / var(--tw-bg-opacity, 1))}.bg-\[\#060913\]\/95{background-color:rgb(6 9 19 / 0.95)}.bg-\[\#0B1120\]{--tw-bg-opacity:1;background-color:rgb(11 17 32 / var(--tw-bg-opacity, 1))}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-sky-500{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.bg-\[\#060913\]\/90{background-color:rgb(6 9 19 / 0.9)}.bg-indigo-500{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.bg-indigo-500\/20{background-color:rgb(99 102 241 / 0.2)}.bg-purple-500\/20{background-color:rgb(168 85 247 / 0.2)}.bg-rose-500\/15{background-color:rgb(244 63 94 / 0.15)}.bg-rose-500\/20{background-color:rgb(244 63 94 / 0.2)}.bg-sky-500\/20{background-color:rgb(14 165 233 / 0.2)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-\[\#060913\]\/80{background-color:rgb(6 9 19 / 0.8)}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-sky-400{--tw-gradient-from:#38bdf8 var(--tw-gradient-from-position);--tw-gradient-to:rgb(56 189 248 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-indigo-600{--tw-gradient-to:#4f46e5 var(--tw-gradient-to-position)}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-2\.5{padding:0.625rem}.p-3\.5{padding:0.875rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pt-2\.5{padding-top:0.625rem}.pt-3{padding-top:0.75rem}.pb-3{padding-bottom:0.75rem}.text-right{text-align:right}.font-mono{font-family:JetBrains Mono, monospace}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-tight{letter-spacing:-0.025em}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.placeholder-slate-500::placeholder{--tw-placeholder-opacity:1;color:rgb(100 116 139 / var(--tw-placeholder-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-emerald-500\/20{--tw-shadow-color:rgb(16 185 129 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-sky-500\/20{--tw-shadow-color:rgb(14 165 233 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-sky-500\/30 *::selection{background-color:rgb(14 165 233 / 0.3)}.selection\:bg-sky-500\/30::selection{background-color:rgb(14 165 233 / 0.3)}.hover\:border-slate-600:hover{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-sky-400:hover{--tw-bg-opacity:1;background-color:rgb(56 189 248 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.focus\:border-sky-500:focus{--tw-border-opacity:1;border-color:rgb(14 165 233 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:w-64{width:16rem}.sm\:w-auto{width:auto}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-7{padding:1.75rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}</style></head>
+</head>
 <body class="min-h-screen antialiased selection:bg-sky-500/30">
 
   <!-- CLEAN HEADER — G8 ONLY NEWS WIRE -->
@@ -874,7 +60,7 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
           <div class="flex items-center gap-2">
             <h1 class="text-base sm:text-lg font-extrabold text-white tracking-tight">G8 Institutional News Wire</h1>
             <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 font-mono text-[10px] font-bold">
-              AUTO-DEDUP • 15M LIVE
+              AUTO-DEDUP • 5M LIVE
             </span>
           </div>
           <p class="text-xs text-slate-400">Central Banks, Governors, Geopolitics &amp; ING Bank Research for USD, EUR, GBP, JPY, CHF, AUD, NZD &amp; CAD</p>
@@ -884,7 +70,7 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
       <div class="flex items-center gap-2">
         <button id="btn-refresh" class="px-3.5 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 transition shadow-md shadow-sky-500/20">
           <span>⟳</span>
-          <span id="sync-label">Synced 13:46</span>
+          <span id="sync-label">Sync Live</span>
         </button>
         <button id="btn-download" class="px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition shadow-md shadow-emerald-500/20">
           Save HTML
@@ -898,343 +84,56 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
     <!-- FILTER BAR: G8 CURRENCIES, TOPIC, HORIZON (SHORT/LONG TERM), WINDOW, IMPACT -->
     <section class="bg-[#0B1120] border border-slate-800 rounded-2xl p-4 space-y-3">
       <div class="flex flex-wrap items-center justify-between gap-2">
-        <div class="flex flex-wrap items-center gap-1.5" id="asset-pills"><button data-asset="ALL" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-[#060913] text-slate-300 border-slate-800 hover:border-slate-600">All G8</button><button data-asset="USD" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-sky-500 text-slate-950 border-sky-400 shadow-sm">🇺🇸 USD</button><button data-asset="EUR" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-[#060913] text-slate-300 border-slate-800 hover:border-slate-600">🇪🇺 EUR</button><button data-asset="GBP" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-[#060913] text-slate-300 border-slate-800 hover:border-slate-600">🇬🇧 GBP</button><button data-asset="JPY" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-[#060913] text-slate-300 border-slate-800 hover:border-slate-600">🇯🇵 JPY</button><button data-asset="CHF" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-[#060913] text-slate-300 border-slate-800 hover:border-slate-600">🇨🇭 CHF</button><button data-asset="AUD" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-[#060913] text-slate-300 border-slate-800 hover:border-slate-600">🇦🇺 AUD</button><button data-asset="NZD" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-[#060913] text-slate-300 border-slate-800 hover:border-slate-600">🇳🇿 NZD</button><button data-asset="CAD" class="asset-btn px-3 py-1.5 rounded-xl font-mono text-xs font-bold border transition bg-[#060913] text-slate-300 border-slate-800 hover:border-slate-600">🇨🇦 CAD</button></div>
+        <div class="flex flex-wrap items-center gap-1.5" id="asset-pills"></div>
         <div class="flex flex-wrap items-center gap-1.5" id="topic-pills">
-          <button data-topic="ALL" class="topic-btn px-2.5 py-1 rounded-lg font-mono text-xs font-bold transition bg-sky-500 text-slate-950">All Topics</button>
-          <button data-topic="MONETARY" class="topic-btn px-2.5 py-1 rounded-lg font-mono text-xs font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">🏛️ Central Banks &amp; Governors</button>
-          <button data-topic="GEOPOLITICS" class="topic-btn px-2.5 py-1 rounded-lg font-mono text-xs font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">🌍 Geopolitics &amp; Oil</button>
-          <button data-topic="BANKS" class="topic-btn px-2.5 py-1 rounded-lg font-mono text-xs font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">🏦 ING &amp; Bank Research</button>
+          <button data-topic="ALL" class="topic-btn px-2.5 py-1 rounded-lg font-mono text-xs font-bold">All Topics</button>
+          <button data-topic="MONETARY" class="topic-btn px-2.5 py-1 rounded-lg font-mono text-xs font-bold">🏛️ Central Banks &amp; Governors</button>
+          <button data-topic="GEOPOLITICS" class="topic-btn px-2.5 py-1 rounded-lg font-mono text-xs font-bold">🌍 Geopolitics &amp; Oil</button>
+          <button data-topic="BANKS" class="topic-btn px-2.5 py-1 rounded-lg font-mono text-xs font-bold">🏦 ING &amp; Bank Research</button>
         </div>
       </div>
 
       <div class="flex flex-wrap items-center justify-between gap-3 pt-2.5 border-t border-slate-800/80 text-xs">
         <div class="flex flex-wrap items-center gap-2">
           <span class="font-mono text-[11px] font-bold text-slate-400 uppercase">Horizon:</span>
-          <button data-hor="ALL" class="hor-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-indigo-500 text-white">All</button>
-          <button data-hor="SHORT" class="hor-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">Short-Term (1–3d)</button>
-          <button data-hor="MEDIUM" class="hor-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">Medium-Term (7–14d)</button>
-          <button data-hor="LONG" class="hor-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">Long-Term (15–45d+)</button>
+          <button data-hor="ALL" class="hor-btn px-2.5 py-1 rounded-lg font-mono font-bold">All</button>
+          <button data-hor="SHORT" class="hor-btn px-2.5 py-1 rounded-lg font-mono font-bold">Short-Term (1–3d)</button>
+          <button data-hor="MEDIUM" class="hor-btn px-2.5 py-1 rounded-lg font-mono font-bold">Medium-Term (7–14d)</button>
+          <button data-hor="LONG" class="hor-btn px-2.5 py-1 rounded-lg font-mono font-bold">Long-Term (15–45d+)</button>
 
           <span class="text-slate-700 mx-1">|</span>
 
           <span class="font-mono text-[11px] font-bold text-slate-400 uppercase">Window:</span>
-          <button data-days="1" class="day-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">24h</button>
-          <button data-days="7" class="day-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">7D</button>
-          <button data-days="14" class="day-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">14D</button>
-          <button data-days="30" class="day-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-sky-500 text-slate-950">30D</button>
+          <button data-days="1" class="day-btn px-2.5 py-1 rounded-lg font-mono font-bold">24h</button>
+          <button data-days="7" class="day-btn px-2.5 py-1 rounded-lg font-mono font-bold">7D</button>
+          <button data-days="14" class="day-btn px-2.5 py-1 rounded-lg font-mono font-bold">14D</button>
+          <button data-days="30" class="day-btn px-2.5 py-1 rounded-lg font-mono font-bold">30D</button>
 
           <span class="text-slate-700 mx-1">|</span>
 
           <span class="font-mono text-[11px] font-bold text-slate-400 uppercase">Impact:</span>
-          <button data-imp="ALL" class="imp-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-sky-500 text-slate-950">All</button>
-          <button data-imp="HIGH" class="imp-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">High (8–10)</button>
-          <button data-imp="MED" class="imp-btn px-2.5 py-1 rounded-lg font-mono font-bold transition bg-[#060913] text-slate-300 border border-slate-800 hover:border-slate-600">Med (5–7)</button>
+          <button data-imp="ALL" class="imp-btn px-2.5 py-1 rounded-lg font-mono font-bold">All</button>
+          <button data-imp="HIGH" class="imp-btn px-2.5 py-1 rounded-lg font-mono font-bold">High (8–10)</button>
+          <button data-imp="MED" class="imp-btn px-2.5 py-1 rounded-lg font-mono font-bold">Med (5–7)</button>
         </div>
 
         <div class="flex items-center gap-2 w-full sm:w-auto">
-          <input id="search-input" type="text" placeholder="Search (Fed, ECB, ING, Bailey, Ueda, Hormuz, OAT)..." class="w-full sm:w-64 px-3 py-1.5 rounded-xl bg-[#060913] border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-500">
-          <span id="story-count" class="font-mono text-[11px] text-slate-400 whitespace-nowrap">4 unique stories</span>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search (Fed, ECB, ING, Bailey, Ueda, Hormuz, OAT)..."
+            class="w-full sm:w-64 px-3 py-1.5 rounded-xl bg-[#060913] border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-500"
+          />
+          <span id="story-count" class="font-mono text-[11px] text-slate-400 whitespace-nowrap"></span>
         </div>
       </div>
     </section>
 
     <!-- CURRENCY REASON BANNER (APPEARS WHEN CLICKING ANY G8 CURRENCY: USD, EUR, GBP, JPY, CHF, AUD, NZD, CAD) -->
-    <section id="currency-reason-box" class="bg-[#0B1120] border border-slate-700 rounded-2xl p-4 sm:p-5 space-y-3">
-        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
-          <div class="flex flex-wrap items-center gap-2.5">
-            <span class="text-2xl">🇺🇸</span>
-            <div>
-              <div class="flex flex-wrap items-center gap-2">
-                <h2 class="text-base sm:text-lg font-extrabold text-white">USD — US Dollar (Federal Reserve (Fed))</h2>
-                <span class="px-2.5 py-0.5 rounded-full border font-mono text-xs font-extrabold bg-emerald-500/20 text-emerald-300 border-emerald-500/40">
-                  CURRENT BIAS: BULLISH ▲
-                </span>
-              </div>
-              <p class="text-xs text-slate-400">Live fundamental driver breakdown calculated from 4 active USD headlines</p>
-            </div>
-          </div>
-
-          <button id="btn-clear-currency" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono font-bold text-slate-200 transition">
-            Show All G8 ✕
-          </button>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3.5">
-          <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1.5 border-l-4 border-l-emerald-500">
-            <div class="font-mono text-xs font-extrabold uppercase text-emerald-400">
-              Why USD Is Currently BULLISH (Primary Institutional Reason)
-            </div>
-            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">Fed Governors Waller and Bowman back a December 9 rate hike (94% OIS priced) following a 10–2 hawkish vote split, lifting US 2Y yields to 4.66%, while Strait of Hormuz naval tensions and US–China tariff risks draw global safe-haven flows into USD.</p>
-          </div>
-
-          <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1.5 border-l-4 border-l-sky-500">
-            <div class="font-mono text-xs font-extrabold uppercase text-sky-400">
-              What Would Make USD Flip BEARISH
-            </div>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">Would turn BEARISH if US CPI/PCE inflation cools sharply, labor market data weakens, or Persian Gulf tensions de-escalate and trigger a Risk-On rotation out of safe havens.</p>
-          </div>
-        </div>
-
-        
-          <div class="bg-[#060913]/80 border border-slate-800/90 rounded-xl p-3 space-y-1.5">
-            <div class="font-mono text-[11px] font-bold uppercase text-amber-300">Active Headlines Driving USD Right Now:</div>
-            <ul class="space-y-1 text-xs text-slate-300">
-              
-                  <li class="flex items-start gap-2">
-                    <span class="font-mono font-bold shrink-0 text-emerald-400">[BULLISH ▲]</span>
-                    <span>Strait of Hormuz Naval Warnings: Tanker War-Risk Premiums Surge as WTI Crude Breaks Above $81.40/bbl <span class="text-slate-500 font-mono">(2h ago)</span></span>
-                  </li>
-                
-                  <li class="flex items-start gap-2">
-                    <span class="font-mono font-bold shrink-0 text-emerald-400">[BULLISH ▲]</span>
-                    <span>Fed Governors Waller and Bowman Back December Rate Hike; US 2Y Treasury Yields Climb to 4.66% <span class="text-slate-500 font-mono">(4h ago)</span></span>
-                  </li>
-                
-                  <li class="flex items-start gap-2">
-                    <span class="font-mono font-bold shrink-0 text-emerald-400">[BULLISH ▲]</span>
-                    <span>ING FX Research Note: Policy Divergence and Safe-Haven Flows Favor Short AUD/USD, Short EUR/CHF &amp; Long GBP/AUD <span class="text-slate-500 font-mono">(19h ago)</span></span>
-                  </li>
-                
-                  <li class="flex items-start gap-2">
-                    <span class="font-mono font-bold shrink-0 text-emerald-400">[BULLISH ▲]</span>
-                    <span>Australian Rate Futures Price 1–2 RBA Rate Cuts — AUD Isolated as the Sole G8 Easing Currency <span class="text-slate-500 font-mono">(1d ago)</span></span>
-                  </li>
-                
-            </ul>
-          </div>
-        
-      </section>
+    <section id="currency-reason-box" class="hidden bg-[#0B1120] border border-slate-700 rounded-2xl p-4 sm:p-5 space-y-3"></section>
 
     <!-- PURE NEWS WIRE STREAM (3 SQUARE CARDS PER ROW ON DESKTOP) -->
-    <section id="news-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <article data-id="s1" class="news-card cursor-pointer p-5 space-y-3.5">
-            <div class="space-y-3">
-              <!-- Top Meta Row: Real Time + Horizon (Short/Long Term) + Impact -->
-              <div class="flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono">
-                <div class="flex items-center gap-1.5">
-                  <span class="px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-bold">2h ago</span>
-                  <span class="px-2 py-0.5 rounded font-bold bg-sky-500/20 text-sky-300 border border-sky-500/30">Short-Term (1–3d)</span>
-                </div>
-                <span class="px-2 py-0.5 rounded font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">IMP 10/10</span>
-              </div>
-
-              <!-- Topic & Merged Sources -->
-              <div class="flex items-center justify-between gap-2 text-[11px] font-mono text-slate-400">
-                <span class="text-slate-300 font-semibold">🌍 Geopolitics &amp; Oil</span>
-                <span class="truncate text-right" title="Reuters Energy Wire + Bloomberg Markets">Sources: Reuters Energy Wire + Bloomberg Markets</span>
-              </div>
-
-              <!-- Headline -->
-              <h2 class="text-base font-extrabold text-white leading-snug line-clamp-3">Strait of Hormuz Naval Warnings: Tanker War-Risk Premiums Surge as WTI Crude Breaks Above $81.40/bbl</h2>
-
-              <!-- Detailed Institutional Body -->
-              <p class="text-xs text-slate-300 leading-relaxed line-clamp-5">International marine insurers sharply raised war-risk premiums for crude tankers transiting the Strait of Hormuz following heightened naval security warnings in the Persian Gulf. Institutional macro desks immediately rotated defensive liquidity into the US Dollar (USD) and Swiss Franc (CHF), while Canadian Dollar (CAD) gained terms-of-trade support from WTI crude oil clearing $81.40/bbl and Euro (EUR) weakened on higher European energy import costs.</p>
-
-              <!-- Cause Box -->
-              <div class="bg-[#060913]/90 border border-slate-800/90 rounded-xl p-2.5 text-[11px] text-slate-300 leading-relaxed">
-                <span class="font-mono font-bold text-amber-300 uppercase block mb-0.5">Cause of Move:</span>
-                <span class="line-clamp-2">Escalating naval security risks along the world’s most critical oil chokepoint, triggering simultaneous safe-haven flows (USD, CHF) and energy-importer pressure (EUR).</span>
-              </div>
-            </div>
-
-            <!-- Footer Impacts + Click Trigger -->
-            <div class="space-y-2.5 pt-3 border-t border-slate-800/80">
-              <div class="flex flex-wrap gap-1.5">
-                
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      USD ▲
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      CHF ▲
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      CAD ▲
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-rose-500/15 text-rose-300 border-rose-500/30">
-                      EUR ▼
-                    </span>
-                  
-              </div>
-              <div class="flex items-center justify-between text-[11px] font-bold text-sky-400">
-                <span>Click square to read full brief</span>
-                <span>Open →</span>
-              </div>
-            </div>
-          </article>
-        
-          <article data-id="s2" class="news-card cursor-pointer p-5 space-y-3.5">
-            <div class="space-y-3">
-              <!-- Top Meta Row: Real Time + Horizon (Short/Long Term) + Impact -->
-              <div class="flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono">
-                <div class="flex items-center gap-1.5">
-                  <span class="px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-bold">4h ago</span>
-                  <span class="px-2 py-0.5 rounded font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Medium-Term (7–14d)</span>
-                </div>
-                <span class="px-2 py-0.5 rounded font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">IMP 9/10</span>
-              </div>
-
-              <!-- Topic & Merged Sources -->
-              <div class="flex items-center justify-between gap-2 text-[11px] font-mono text-slate-400">
-                <span class="text-slate-300 font-semibold">🏛️ Central Banks &amp; Governors</span>
-                <span class="truncate text-right" title="Federal Reserve Wire + Wall Street Journal">Sources: Federal Reserve Wire + Wall Street Journal</span>
-              </div>
-
-              <!-- Headline -->
-              <h2 class="text-base font-extrabold text-white leading-snug line-clamp-3">Fed Governors Waller and Bowman Back December Rate Hike; US 2Y Treasury Yields Climb to 4.66%</h2>
-
-              <!-- Detailed Institutional Body -->
-              <p class="text-xs text-slate-300 leading-relaxed line-clamp-5">Federal Reserve Board Governors Christopher Waller and Michelle Bowman delivered coordinated hawkish remarks warning that core services inflation remains stubbornly above the 2.0% mandate. Both officials explicitly referenced the 10–2 vote split at the last FOMC meeting—where two committee members dissented in favor of an immediate +25 bps increase—signaling that monetary policy must remain firmly restrictive through year-end.</p>
-
-              <!-- Cause Box -->
-              <div class="bg-[#060913]/90 border border-slate-800/90 rounded-xl p-2.5 text-[11px] text-slate-300 leading-relaxed">
-                <span class="font-mono font-bold text-amber-300 uppercase block mb-0.5">Cause of Move:</span>
-                <span class="line-clamp-2">Coordinated hawkish guidance from voting FOMC governors confirming December tightening, widening short-end yield differentials in favor of the US Dollar.</span>
-              </div>
-            </div>
-
-            <!-- Footer Impacts + Click Trigger -->
-            <div class="space-y-2.5 pt-3 border-t border-slate-800/80">
-              <div class="flex flex-wrap gap-1.5">
-                
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      USD ▲
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-rose-500/15 text-rose-300 border-rose-500/30">
-                      AUD ▼
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-rose-500/15 text-rose-300 border-rose-500/30">
-                      NZD ▼
-                    </span>
-                  
-              </div>
-              <div class="flex items-center justify-between text-[11px] font-bold text-sky-400">
-                <span>Click square to read full brief</span>
-                <span>Open →</span>
-              </div>
-            </div>
-          </article>
-        
-          <article data-id="s3" class="news-card cursor-pointer p-5 space-y-3.5">
-            <div class="space-y-3">
-              <!-- Top Meta Row: Real Time + Horizon (Short/Long Term) + Impact -->
-              <div class="flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono">
-                <div class="flex items-center gap-1.5">
-                  <span class="px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-bold">19h ago</span>
-                  <span class="px-2 py-0.5 rounded font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30">Long-Term (15–45d+)</span>
-                </div>
-                <span class="px-2 py-0.5 rounded font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">IMP 9/10</span>
-              </div>
-
-              <!-- Topic & Merged Sources -->
-              <div class="flex items-center justify-between gap-2 text-[11px] font-mono text-slate-400">
-                <span class="text-slate-300 font-semibold">🏦 ING &amp; Bank Research</span>
-                <span class="truncate text-right" title="ING Think FX &amp; Macro">Sources: ING Think FX &amp; Macro</span>
-              </div>
-
-              <!-- Headline -->
-              <h2 class="text-base font-extrabold text-white leading-snug line-clamp-3">ING FX Research Note: Policy Divergence and Safe-Haven Flows Favor Short AUD/USD, Short EUR/CHF &amp; Long GBP/AUD</h2>
-
-              <!-- Detailed Institutional Body -->
-              <p class="text-xs text-slate-300 leading-relaxed line-clamp-5">In its latest institutional G10 FX strategy brief, ING’s macro research desk highlights two structural drivers dominating currency trends into Q1 2027: maximum central bank divergence between a dovish RBA and hawkish Fed/BoE/BoJ, alongside European fiscal and energy headwinds. ING concludes that rallies in AUD and EUR remain attractive selling opportunities against USD, GBP, and CHF.</p>
-
-              <!-- Cause Box -->
-              <div class="bg-[#060913]/90 border border-slate-800/90 rounded-xl p-2.5 text-[11px] text-slate-300 leading-relaxed">
-                <span class="font-mono font-bold text-amber-300 uppercase block mb-0.5">Cause of Move:</span>
-                <span class="line-clamp-2">Structural multi-week interest-rate spread widening between easing/politically pressured currencies (AUD, EUR) and tightening/safe-haven peers (USD, GBP, CHF).</span>
-              </div>
-            </div>
-
-            <!-- Footer Impacts + Click Trigger -->
-            <div class="space-y-2.5 pt-3 border-t border-slate-800/80">
-              <div class="flex flex-wrap gap-1.5">
-                
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      USD ▲
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      GBP ▲
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      CHF ▲
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-rose-500/15 text-rose-300 border-rose-500/30">
-                      AUD ▼
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-rose-500/15 text-rose-300 border-rose-500/30">
-                      EUR ▼
-                    </span>
-                  
-              </div>
-              <div class="flex items-center justify-between text-[11px] font-bold text-sky-400">
-                <span>Click square to read full brief</span>
-                <span>Open →</span>
-              </div>
-            </div>
-          </article>
-        
-          <article data-id="s4" class="news-card cursor-pointer p-5 space-y-3.5">
-            <div class="space-y-3">
-              <!-- Top Meta Row: Real Time + Horizon (Short/Long Term) + Impact -->
-              <div class="flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono">
-                <div class="flex items-center gap-1.5">
-                  <span class="px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-bold">1d ago</span>
-                  <span class="px-2 py-0.5 rounded font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30">Long-Term (15–45d+)</span>
-                </div>
-                <span class="px-2 py-0.5 rounded font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">IMP 9/10</span>
-              </div>
-
-              <!-- Topic & Merged Sources -->
-              <div class="flex items-center justify-between gap-2 text-[11px] font-mono text-slate-400">
-                <span class="text-slate-300 font-semibold">🏛️ Central Banks &amp; Governors</span>
-                <span class="truncate text-right" title="RBA Wire + Bloomberg FX">Sources: RBA Wire + Bloomberg FX</span>
-              </div>
-
-              <!-- Headline -->
-              <h2 class="text-base font-extrabold text-white leading-snug line-clamp-3">Australian Rate Futures Price 1–2 RBA Rate Cuts — AUD Isolated as the Sole G8 Easing Currency</h2>
-
-              <!-- Detailed Institutional Body -->
-              <p class="text-xs text-slate-300 leading-relaxed line-clamp-5">Australian interest-rate futures and OIS swap curves repriced aggressively lower following softer domestic household consumption and cooling wage momentum, now pricing 1 to 2 rate cuts from the Reserve Bank of Australia’s 4.85% cash rate. This dovish shift leaves the RBA completely isolated among G8 central banks while the Fed, BoE, BoJ, and ECB remain on hold or actively tightening.</p>
-
-              <!-- Cause Box -->
-              <div class="bg-[#060913]/90 border border-slate-800/90 rounded-xl p-2.5 text-[11px] text-slate-300 leading-relaxed">
-                <span class="font-mono font-bold text-amber-300 uppercase block mb-0.5">Cause of Move:</span>
-                <span class="line-clamp-2">Maximum monetary policy divergence between an easing RBA (dovish) and tightening G8 peers (Fed, BoE, BoJ), compounded by soft Chinese industrial demand.</span>
-              </div>
-            </div>
-
-            <!-- Footer Impacts + Click Trigger -->
-            <div class="space-y-2.5 pt-3 border-t border-slate-800/80">
-              <div class="flex flex-wrap gap-1.5">
-                
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-rose-500/15 text-rose-300 border-rose-500/30">
-                      AUD ▼
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      GBP ▲
-                    </span>
-                  
-                    <span class="px-2 py-0.5 rounded-md border font-mono text-[11px] font-extrabold bg-emerald-500/15 text-emerald-300 border-emerald-500/30">
-                      USD ▲
-                    </span>
-                  
-              </div>
-              <div class="flex items-center justify-between text-[11px] font-bold text-sky-400">
-                <span>Click square to read full brief</span>
-                <span>Open →</span>
-              </div>
-            </div>
-          </article>
-        </section>
+    <section id="news-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></section>
 
   </main>
 
@@ -1567,7 +466,6 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
     }
 
     function addStoryDeduplicated(newStory) {
-      // Once real live stories arrive, purge old static baseline placeholders so only fresh real stories remain
       if (!hasLoadedLiveFeed) {
         NEWS_FEED = NEWS_FEED.filter(n => !n.isBaseline);
         hasLoadedLiveFeed = true;
@@ -1585,7 +483,6 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
             existing.sources.push(src);
           }
         });
-        // Keep the newest timestamp if the same story was updated
         if (new Date(newStory.publishedAt) > new Date(existing.publishedAt)) {
           existing.publishedAt = newStory.publishedAt;
         }
@@ -1870,21 +767,25 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
             <p class="text-sm text-slate-200 leading-relaxed">${item.cause}</p>
           </div>
 
-          <div class="bg-[#060913] border border-slate-800 rounded-xl p-4 space-y-2 border-l-4 border-l-emerald-400">
-            <div class="font-mono text-xs font-bold text-emerald-300 uppercase">4. Horizon Effect (${item.horizonLabel}) &amp; Invalidation</div>
+          <div class="bg-[#060913] border border-slate-800 rounded-xl p-4 space-y-2 border-l-4 border-l-emerald-500">
+            <div class="font-mono text-xs font-bold text-emerald-400 uppercase">4. Horizon Outlook &amp; Invalidation (${item.horizonLabel})</div>
             <p class="text-sm text-slate-200 leading-relaxed">${outlookText}</p>
           </div>
 
-          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-800">
-            <div class="flex flex-wrap gap-2">
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+            <div class="flex flex-wrap gap-1.5">
               ${item.impacts.map(imp => {
-                const bull = imp.dir === 'BULLISH';
-                return `<span class="px-3 py-1 rounded-lg font-mono text-xs font-extrabold ${bull ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-rose-500/20 text-rose-300 border border-rose-500/30'}">${imp.code} ${bull ? '▲ BULLISH' : '▼ BEARISH'}</span>`;
+                const isBull = imp.dir === 'BULLISH';
+                return `
+                  <span class="px-2.5 py-1 rounded-lg font-mono text-xs font-extrabold ${isBull ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-rose-500/20 text-rose-300 border border-rose-500/30'}">
+                    ${imp.code} ${isBull ? '▲ BULLISH' : '▼ BEARISH'}
+                  </span>
+                `;
               }).join('')}
             </div>
 
-            <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs">
-              Open Original Source ↗
+            <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs transition">
+              Read Original Source ↗
             </a>
           </div>
         </div>
@@ -1895,50 +796,108 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
 
     async function syncLiveNews() {
       const label = document.getElementById('sync-label');
-      label.textContent = 'Syncing...';
+      label.textContent = 'Syncing Live...';
 
-      // 1. GitHub feed.json (24/7 Cloud Worker output)
+      // 1. Load feed.json generated by GitHub Actions bot if available
       try {
         const res = await fetch(`./feed.json?t=${Date.now()}`, { cache: 'no-store' });
         if (res.ok) {
           const data = await res.json();
-          (data.stories || []).forEach((st, idx) => {
-            if (!st.title || !st.publishedAt) return;
-            const rawImps = (st.currencyImpacts || detectImpactsFromText(st.title)).filter(i => i.code !== 'XAU');
-            const imps = rawImps.length > 0 ? rawImps : [{ code: 'USD', dir: 'BULLISH' }];
-            const meta = classifyStoryMeta(st.title + ' ' + (st.summaryEn || ''));
+          if (Array.isArray(data.stories)) {
+            data.stories.forEach((st, idx) => {
+              if (!st.title) return;
+              const imps = (st.currencyImpacts || [{ code: 'USD', dir: 'BULLISH' }]).filter(x => x.code !== 'XAU');
+              const meta = classifyStoryMeta(st.title + ' ' + (st.sources || []).join(' '));
+              addStoryDeduplicated({
+                id: `feed-${idx}-${st.publishedAt || Date.now()}`,
+                publishedAt: st.publishedAt || new Date().toISOString(),
+                impact: st.impactScore || st.impact || 8,
+                topic: st.category || meta.topic,
+                topicLabel: st.category === 'BANKS' ? '🏦 ING & Bank Research' : st.category === 'GEOPOLITICS' ? '🌍 Geopolitics & Oil' : meta.topicLabel,
+                horizon: st.horizon || meta.horizon,
+                horizonLabel: st.horizon === 'LONG' ? 'Long-Term (15–45d+)' : st.horizon === 'SHORT' ? 'Short-Term (1–3d)' : meta.horizonLabel,
+                sources: Array.isArray(st.sources) && st.sources.length ? st.sources : ['Bloomberg / Reuters'],
+                title: st.title,
+                summary: st.summaryEn || st.title,
+                cause: `Direct G8 central bank / macro catalyst triggered by: ${st.title}.`,
+                impacts: imps.length ? imps : [{ code: 'USD', dir: 'BULLISH' }],
+                url: st.url || 'https://think.ing.com/'
+              });
+            });
+          }
+        }
+      } catch (e) {}
+
+      // 2. Live Direct Browser RSS Wire (FXStreet, Google News Live 24h, CNBC, Yahoo Finance, ING Think) via rss2json CORS bridge
+      const LIVE_BROWSER_RSS = [
+        { name: 'FXStreet Live Wire', url: 'https://www.fxstreet.com/rss/news' },
+        { name: 'Google News FX & Central Banks', url: 'https://news.google.com/rss/search?q=(%22Federal+Reserve%22+OR+%22ECB%22+OR+%22Bank+of+England%22+OR+%22Bank+of+Japan%22+OR+%22RBA%22+OR+%22forex%22)+when:1d&hl=en-US&gl=US&ceid=US:en' },
+        { name: 'Google News Geopolitics & Oil', url: 'https://news.google.com/rss/search?q=(%22crude+oil%22+OR+%22Strait+of+Hormuz%22+OR+%22tariffs%22+OR+%22interest+rate%22+OR+%22inflation%22)+when:1d&hl=en-US&gl=US&ceid=US:en' },
+        { name: 'ING Think FX & Macro', url: 'https://think.ing.com/rss/' },
+        { name: 'CNBC Economy & Markets', url: 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258' },
+        { name: 'Yahoo Finance Macro', url: 'https://finance.yahoo.com/news/rssindex' }
+      ];
+
+      await Promise.allSettled(LIVE_BROWSER_RSS.map(async (feed, fIdx) => {
+        try {
+          const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&_t=${Date.now()}`;
+          const rRes = await fetch(apiUrl);
+          if (!rRes.ok) return;
+          const rData = await rRes.json();
+          if (rData.status !== 'ok' || !Array.isArray(rData.items)) return;
+
+          rData.items.slice(0, 12).forEach((item, idx) => {
+            const title = (item.title || '').trim();
+            if (!title || title.length < 18) return;
+            const rawDesc = (item.description || item.content || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+            const fullText = `${title} ${rawDesc}`;
+            if (!/\b(fed|fomc|powell|waller|bowman|ecb|lagarde|boe|bailey|boj|ueda|rba|snb|boc|rate|inflation|cpi|pce|gdp|pmi|jobs|nfp|dollar|usd|euro|eur|sterling|gbp|yen|jpy|franc|chf|aussie|aud|kiwi|nzd|loonie|cad|forex|oil|crude|opec|hormuz|tariff|sanction|treasury|yield|ing)\b/i.test(fullText)) return;
+
+            let pubDate = item.pubDate ? new Date(item.pubDate.replace(' ', 'T') + (item.pubDate.includes('Z') || item.pubDate.includes('+') ? '' : 'Z')) : new Date();
+            if (isNaN(pubDate.getTime())) pubDate = new Date();
+            const now = new Date();
+            if (pubDate.getUTCHours() === 0 && pubDate.getUTCMinutes() === 0 && pubDate.toISOString().slice(0, 10) === now.toISOString().slice(0, 10)) {
+              pubDate = now;
+            }
+
+            const imps = detectImpactsFromText(fullText);
+            const meta = classifyStoryMeta(fullText + ' ' + feed.name);
             const assetNames = imps.map(i => i.code).join(', ');
+            const cleanSummary = rawDesc.length > 45
+              ? rawDesc.slice(0, 440)
+              : `Institutional wire report via ${feed.name}: "${title}". Directly impacts G8 interest-rate expectations, sovereign yield differentials, and cross-currency liquidity across ${assetNames}.`;
+
             addStoryDeduplicated({
-              id: `gh-${st.publishedAt}-${idx}`,
-              publishedAt: st.publishedAt,
-              impact: st.impactScore || st.impact || 8,
+              id: `rss-${fIdx}-${idx}-${pubDate.getTime()}`,
+              publishedAt: pubDate.toISOString(),
+              impact: /\b(rate|hike|cut|fomc|powell|lagarde|bailey|ueda|hormuz|war|cpi|nfp)\b/i.test(title) ? 9 : 8,
               topic: meta.topic,
               topicLabel: meta.topicLabel,
               horizon: meta.horizon,
               horizonLabel: meta.horizonLabel,
-              sources: st.sources && st.sources.length ? [...st.sources] : ['Live Wire'],
-              title: st.title,
-              summary: st.summaryEn || `Institutional wire report via ${(st.sources && st.sources[0]) || 'Global Macro Desk'}: ${st.title}. This development directly impacts central bank rate pricing, sovereign yield spreads, and cross-asset liquidity across ${assetNames}.`,
-              marketReaction: `FX desks repriced short-term rate expectations and yield differentials across ${assetNames} immediately following the headline release.`,
-              cause: `Direct G8 monetary policy & macro sentiment repricing triggered by: ${st.title}.`,
-              outlook: `${meta.horizonLabel} directional bias stays in focus for ${assetNames} pending follow-up central bank guidance.`,
+              sources: [item.author && item.author.length < 35 ? `${feed.name} (${item.author})` : feed.name],
+              title,
+              summary: cleanSummary,
+              marketReaction: `Immediate repricing across G8 rate futures, sovereign yields, and spot FX pairs linked to ${assetNames} following the release on ${feed.name}.`,
+              cause: `Direct G8 central bank policy & macro sentiment shift driven by: ${title}.`,
+              outlook: `${meta.horizonLabel} directional bias remains active across ${assetNames} pending follow-up central bank guidance and yield confirmation.`,
               impacts: imps,
-              url: st.url || 'https://www.reuters.com/'
+              url: item.link || 'https://www.fxstreet.com/news'
             });
           });
-        }
-      } catch (e) {}
+        } catch (e) {}
+      }));
 
-      // 2. Live GDELT Wire for G8 Central Banks, Governors, Geopolitics & ING Research (NO XAU)
+      // 3. Live GDELT Wire Backup for G8 Central Banks, Governors, Geopolitics & ING Research
       try {
-        const q = encodeURIComponent('("Federal Reserve" OR "ECB" OR "Bank of England" OR "Bank of Japan" OR "RBA" OR "ING Think" OR "interest rate" OR "Strait of Hormuz" OR "crude oil") sourcelang:english');
-        const gRes = await fetch(`https://api.gdeltproject.org/api/v2/doc/doc?query=${q}&mode=ArtList&maxrecords=25&timespan=7d&format=json&sort=DateDesc`);
+        const q = encodeURIComponent('(Fed OR ECB OR BoE OR BoJ OR RBA OR forex OR oil OR tariffs) sourcelang:english');
+        const gRes = await fetch(`https://api.gdeltproject.org/api/v2/doc/doc?query=${q}&mode=ArtList&maxrecords=25&timespan=24h&format=json&sort=DateDesc`);
         if (gRes.ok) {
           const gData = await gRes.json();
           (gData.articles || []).forEach((art, idx) => {
             const title = (art.title || '').trim();
             if (!title || title.length < 20 || !art.seendate || art.seendate.length < 15) return;
-            const s = art.seendate; // Format: YYYYMMDDTHHMMSSZ
+            const s = art.seendate;
             const pubIso = `${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}T${s.slice(9,11)}:${s.slice(11,13)}:${s.slice(13,15)}Z`;
             if (isNaN(new Date(pubIso).getTime())) return;
 
@@ -1980,8 +939,8 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
     document.addEventListener('DOMContentLoaded', () => {
       renderAll();
       syncLiveNews();
-      setInterval(syncLiveNews, 15 * 60 * 1000); // Auto-sync every 15 minutes
-      setInterval(renderNews, 60 * 1000);       // Live recalculation of exact elapsed minutes/hours/days
+      setInterval(syncLiveNews, 5 * 60 * 1000);
+      setInterval(renderNews, 60 * 1000);
 
       document.querySelectorAll('.topic-btn').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -2033,5 +992,5 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
       });
     });
   </script>
-
-</body></html>
+</body>
+</html>
