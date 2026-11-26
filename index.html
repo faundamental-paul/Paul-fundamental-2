@@ -870,7 +870,7 @@
             addStoryDeduplicated({
               id: `rss-${fIdx}-${idx}-${pubDate.getTime()}`,
               publishedAt: pubDate.toISOString(),
-              impact: /\b(rate|hike|cut|fomc|powell|lagarde|bailey|ueda|hormuz|war|cpi|nfp)\b/i.test(title) ? 9 : 8,
+              impact: /\b(fomc|rate hike|rate cut|interest rate decision|strait of hormuz|war-risk|cpi|pce|nonfarm|nfp|gdp|powell|lagarde|bailey|ueda|bullock|schlegel|macklem|tariffs|sanctions)\b/i.test(title) ? 9 : 6,
               topic: meta.topic,
               topicLabel: meta.topicLabel,
               horizon: meta.horizon,
