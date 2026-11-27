@@ -1,202 +1,14 @@
 {
-  "updatedAt": "2026-11-27T03:43:34.992623+00:00",
+  "updatedAt": "2026-11-27T13:35:33.871385+00:00",
   "storyCount": 40,
   "stories": [
-    {
-      "title": "Australia’s CPI surprise keeps RBA on alert, but weak growth signals argue for patience",
-      "url": "https://think.ing.com/snaps/australia-cpi-surprise-keeps-rba-on-alert-but-weak-growth-signals-argue-for-patience/",
-      "sources": [
-        "ING Think FX & Macro"
-      ],
-      "publishedAt": "2026-11-27T03:43:35.645769+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1m ago",
-      "timeLabel": "1m ago",
-      "category": "BANKS",
-      "horizon": "LONG",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "AUD",
-          "dir": "BEARISH"
-        },
-        {
-          "code": "CAD",
-          "dir": "BEARISH"
-        }
-      ],
-      "summaryEn": "AUSTRALIA: Australia's October CPI rose to 4.9% year-on-year, driven by higher transport and electricity prices, with broader pass-through to core inflation. Despite the upside inflation surprise, falling oil prices and a weakening labour market should allow the Reserve Bank to keep rates unchanged as growth slows into 2027"
-    },
-    {
-      "title": "The US tariff wall keeps changing, but it isn’t coming down",
-      "url": "https://think.ing.com/articles/the-us-tariff-wall-keeps-changing-but-it-isnt-coming-down/",
-      "sources": [
-        "ING Think FX & Macro"
-      ],
-      "publishedAt": "2026-11-27T03:43:35.645733+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1m ago",
-      "timeLabel": "1m ago",
-      "category": "BANKS",
-      "horizon": "LONG",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "TRADE: The US is preparing another round of tariffs, this time targeting structural overcapacity across 16 trading partners. It is another reminder that while the legal justification for tariffs keeps changing, US protectionism is becoming increasingly difficult to unwind"
-    },
-    {
-      "title": "Strong growth and elevated inflation signal more Fed tightening",
-      "url": "https://think.ing.com/articles/strong-growth-and-elevated-inflation-signal-more-fed-tightening/",
-      "sources": [
-        "ING Think FX & Macro"
-      ],
-      "publishedAt": "2026-11-27T03:43:35.645692+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1m ago",
-      "timeLabel": "1m ago",
-      "category": "BANKS",
-      "horizon": "LONG",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "NORTH AMERICA: Solid growth, decent jobs and elevated inflation all point to the need for further policy tightening from the Federal Reserve. Nonetheless, the plunge in commodity prices and the weak wage growth environment suggest the Fed doesn't need to move aggressively"
-    },
-    {
-      "title": "Rates Spark: No risk appetite for Thanksgiving dinner",
-      "url": "https://think.ing.com/articles/rates-spark-no-risk-appetite-for-thanksgiving-dinner/",
-      "sources": [
-        "ING Think FX & Macro"
-      ],
-      "publishedAt": "2026-11-27T03:43:35.645654+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1m ago",
-      "timeLabel": "1m ago",
-      "category": "BANKS",
-      "horizon": "LONG",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        },
-        {
-          "code": "EUR",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Despite another hot US inflation reading, rates are under downward pressure amid fragile risk sentiment. Growing concerns about growth could push down the belly of the euro curve as they did in 2008 and 2023. Meanwhile, the ECB will likely wait until 2027 to evaluate minimum reserve requirements"
-    },
-    {
-      "title": "German consumers still don’t share companies’ optimism",
-      "url": "https://think.ing.com/snaps/german-consumer-confidence-nov26/",
-      "sources": [
-        "ING Think FX & Macro"
-      ],
-      "publishedAt": "2026-11-27T03:43:35.645624+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1m ago",
-      "timeLabel": "1m ago",
-      "category": "BANKS",
-      "horizon": "LONG",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "EUR",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "EUROPE: While leading business sentiment indicators like the Ifo index and the PMI point to a continuation of the cyclical rebound of the German economy, consumers' wallets remain closed"
-    },
-    {
-      "title": "FX Daily: Korean won stands out in a harsh EM environment",
-      "url": "https://think.ing.com/articles/fx-daily-korean-won-stands-out-in-a-harsh-em-environment/",
-      "sources": [
-        "ING Think FX & Macro"
-      ],
-      "publishedAt": "2026-11-27T03:43:35.645586+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1m ago",
-      "timeLabel": "1m ago",
-      "category": "BANKS",
-      "horizon": "LONG",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "It looks like the sell-off in risk assets has run its course for now, with investors starting to find value in equities, commodities and some FX pairs. How long this calm lasts is unknown, since it looks like the Fed will have to push ahead with tightening. To withstand dollar strength, currencies will need a good story. The Korean won has one"
-    },
-    {
-      "title": "The Commodities Feed: Oil extends rally as copper rebounds",
-      "url": "https://think.ing.com/articles/the-commodities-feed-gold-slumps-below-3500-oz/",
-      "sources": [
-        "ING Think FX & Macro"
-      ],
-      "publishedAt": "2026-11-27T03:43:35.645553+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1m ago",
-      "timeLabel": "1m ago",
-      "category": "BANKS",
-      "horizon": "LONG",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        },
-        {
-          "code": "CAD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Oil prices continued to climb as escalating tensions in the Middle East kept supply risks in focus, while copper bounced after Wednesday’s sharp sell-off. Gold remained close to a 15-month low as expectations for higher-for-longer US rates continued to weigh on precious metals"
-    },
-    {
-      "title": "How Spain’s parties plan to raise incomes as low earners gain ground",
-      "url": "https://think.ing.com/articles/how-spain-political-parties-plan-to-raise-incomes-as-low-earners-gain-ground/",
-      "sources": [
-        "ING Think FX & Macro"
-      ],
-      "publishedAt": "2026-11-27T03:43:35.645513+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1m ago",
-      "timeLabel": "1m ago",
-      "category": "BANKS",
-      "horizon": "LONG",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "EUR",
-          "dir": "BEARISH"
-        }
-      ],
-      "summaryEn": "EUROPE: Spain's monthly pay rose faster at the bottom than across much of the middle, though the largest gains were concentrated near the top. The political parties differ on how to raise incomes. Some favour a higher minimum wage and shorter working hours; others emphasise tax cuts and hiring incentives, or propose deregulation and tighter access to benefits"
-    },
     {
       "title": "Minutes of ECB’s October meeting confirm tightening bias",
       "url": "https://think.ing.com/articles/minutes-of-ecbs-october-meeting-confirm-tightening-bias/",
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T03:43:35.645479+00:00",
+      "publishedAt": "2026-11-27T13:35:34.475174+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -218,7 +30,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T03:43:35.645374+00:00",
+      "publishedAt": "2026-11-27T13:35:34.475142+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -235,15 +47,237 @@
       "summaryEn": "HUNGARY: Hungary’s labour market appears to have shaken off its summer weakness. But still-elevated wage pressures, worsening firing intentions and persistent geopolitical uncertainty keep us cautious about the outlook"
     },
     {
-      "title": "Stock futures tick higher as Wall Street gets set to wrap up a volatile holiday week: Live updates",
+      "title": "Asia week ahead: RBI rate hike, and data on China, Japan, Korea",
+      "url": "https://think.ing.com/articles/asia-week-ahead-271126a/",
+      "sources": [
+        "ING Think FX & Macro"
+      ],
+      "publishedAt": "2026-11-27T13:35:34.475093+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1m ago",
+      "timeLabel": "1m ago",
+      "category": "BANKS",
+      "horizon": "LONG",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "JPY",
+          "dir": "BULLISH"
+        },
+        {
+          "code": "AUD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "ASIA/PACIFIC: Markets will watch the Reserve Bank of India’s expected 25bp rate hike, while keeping a close eye on China’s PMIs, activity indicators from Japan and South Korea, Philippine inflation data, and Taiwan’s local elections"
+    },
+    {
+      "title": "Rates Spark: Rates resist bearish pressure as France faces rating risk",
+      "url": "https://think.ing.com/articles/rates-spark-rates-resist-bearish-pressure-as-france-faces-rating-risk/",
+      "sources": [
+        "ING Think FX & Macro"
+      ],
+      "publishedAt": "2026-11-27T13:35:34.475049+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1m ago",
+      "timeLabel": "1m ago",
+      "category": "BANKS",
+      "horizon": "LONG",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BULLISH"
+        },
+        {
+          "code": "CHF",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Bearish dynamics remain contained in European rates despite the ECB’s tightening bias and firmer energy prices. French spreads tightened ahead of S&P’s review, but political uncertainty and budget risks could warrant a negative outlook – and keep investors cautious"
+    },
+    {
+      "title": "FX Daily: Green Friday",
+      "url": "https://think.ing.com/articles/fx-daily-green-friday/",
+      "sources": [
+        "ING Think FX & Macro"
+      ],
+      "publishedAt": "2026-11-27T13:35:34.475015+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1m ago",
+      "timeLabel": "1m ago",
+      "category": "BANKS",
+      "horizon": "LONG",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        },
+        {
+          "code": "EUR",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "US stock markets look set to rebound in a shortened session today, after sentiment improved over Thanksgiving. While that can give breathing room to high-beta FX, EUR/USD is far from guaranteed to follow the move higher as markets start to price some Fed tightening back in. Focus will be on some eurozone CPI numbers today"
+    },
+    {
+      "title": "The Commodities Feed: Copper and gold rebound while oil extends gains",
+      "url": "https://think.ing.com/articles/the-commodities-feed-copper-and-gold-rebound-while-oil-extends-gains/",
+      "sources": [
+        "ING Think FX & Macro"
+      ],
+      "publishedAt": "2026-11-27T13:35:34.474985+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1m ago",
+      "timeLabel": "1m ago",
+      "category": "BANKS",
+      "horizon": "LONG",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BULLISH"
+        },
+        {
+          "code": "CAD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Copper and gold continued to recover on Friday as risk appetite improved, while oil extended its advance amid renewed concerns over Middle East supply disruptions. Zinc also moved higher after the planned suspension of production at a European smelter"
+    },
+    {
+      "title": "Hedge funds like gilts, but not the risks",
+      "url": "https://think.ing.com/articles/hedge-funds-like-gilts-but-not-the-risks/",
+      "sources": [
+        "ING Think FX & Macro"
+      ],
+      "publishedAt": "2026-11-27T13:35:34.474944+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1m ago",
+      "timeLabel": "1m ago",
+      "category": "BANKS",
+      "horizon": "LONG",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BULLISH"
+        },
+        {
+          "code": "GBP",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "EUROPE: Hedge funds are increasingly absorbing gilt supply through leveraged trading strategies but passing interest-rate risk to other investors. The Bank of England is looking at policy measures to mitigate the associated risks. Should hedge funds exit such trades, gilts would likely underperform swaps as gilts move to more expensive balance sheets"
+    },
+    {
+      "title": "French economy sinks deeper into gloom",
+      "url": "https://think.ing.com/articles/french-economy-sinks-deeper-into-gloom/",
+      "sources": [
+        "ING Think FX & Macro"
+      ],
+      "publishedAt": "2026-11-27T13:35:34.474903+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1m ago",
+      "timeLabel": "1m ago",
+      "category": "BANKS",
+      "horizon": "LONG",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BEARISH"
+        },
+        {
+          "code": "CHF",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "EUROPE: France’s third-quarter GDP contraction was deeper than previously estimated, confirming the sharp deterioration in the economy. Domestic demand shows no sign of recovery and the labour market is weakening. We now expect growth of just 0.1% in 2026 and 0.4% in 2027. The only good news is that inflationary pressures are easing"
+    },
+    {
+      "title": "CEE & CCA week ahead: Rate decisions in Poland, Kazakhstan to accompany GDP and inflation data",
+      "url": "https://think.ing.com/articles/cee-cca-week-ahead-poland-and-kazakhstan-rate-decisions-alongside-gdp-and-inflation-data/",
+      "sources": [
+        "ING Think FX & Macro"
+      ],
+      "publishedAt": "2026-11-27T13:35:34.474862+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1m ago",
+      "timeLabel": "1m ago",
+      "category": "BANKS",
+      "horizon": "LONG",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "CENTRAL AND EASTERN EUROPE: The National Bank of Poland is expected to keep rates unchanged, while Kazakhstan faces a close rate decision. GDP and inflation data releases will also make for a busy week across the region"
+    },
+    {
+      "title": "Monitoring Romania: A recovery is taking shape, but the margin for error remains narrow",
+      "url": "https://think.ing.com/articles/monitoring-romania-the-recovery-is-taking-shape-but-the-margin-for-error-remains-narrow/",
+      "sources": [
+        "ING Think FX & Macro"
+      ],
+      "publishedAt": "2026-11-27T13:35:34.474757+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1m ago",
+      "timeLabel": "1m ago",
+      "category": "BANKS",
+      "horizon": "LONG",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BEARISH"
+        }
+      ],
+      "summaryEn": "CENTRAL AND EASTERN EUROPE: Romania enters 2027 at an economic handover point. The RRF sprint is over, and the next phase of growth should increasingly rely on recovering real incomes, continued investments and the addition of new energy and industrial capacity. But the recovery will remain vulnerable to fiscal execution and global financial conditions"
+    },
+    {
+      "title": "Budget airline Norse Atlantic files for bankruptcy in Europe after failing to secure funding",
+      "url": "https://www.cnbc.com/2026/11/27/norse-atlantic-bankruptcy-fuel-costs.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T13:32:10+00:00",
+      "daysAgo": 0,
+      "timeAgo": "3m ago",
+      "timeLabel": "3m ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Budget carrier Norse Atlantic filed for bankruptcy Friday, saying it failed to secure funding after soaring fuel costs strained the company's operations."
+    },
+    {
+      "title": "Dow futures rally 600 points as benchmark heads for best week since April 2025: Live updates",
       "url": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html",
       "sources": [
         "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-27T03:40:42+00:00",
+      "publishedAt": "2026-11-27T13:32:07+00:00",
       "daysAgo": 0,
-      "timeAgo": "2m ago",
-      "timeLabel": "2m ago",
+      "timeAgo": "3m ago",
+      "timeLabel": "3m ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -257,15 +291,257 @@
       "summaryEn": "Investors are wrapping up a turbulent trading week that was shortened due to the Thanksgiving holiday."
     },
     {
-      "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
-      "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+      "title": "Renters are now a national political constituency that can influence elections",
+      "url": "https://www.marketwatch.com/story/renters-are-now-a-national-political-constituency-that-can-influence-elections-8f028445?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T13:30:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "5m ago",
+      "timeLabel": "5m ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Renters backed Democrats 61% to 31% in the midterms, a 30-point margin, according to YouGov."
+    },
+    {
+      "title": "Hackers breach U.S. Air Force flagship Cloud One computing platform",
+      "url": "https://www.cnbc.com/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform.html",
       "sources": [
         "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-27T03:30:23+00:00",
+      "publishedAt": "2026-11-27T13:23:01+00:00",
       "daysAgo": 0,
-      "timeAgo": "13m ago",
-      "timeLabel": "13m ago",
+      "timeAgo": "12m ago",
+      "timeLabel": "12m ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "The intrusion was discovered within the past month or so during work to upgrade the system, people familiar with the matter told Reuters."
+    },
+    {
+      "title": "We are living in perilous times if Nvidia CEO Jensen Huang dictates your 401(k) balance",
+      "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T13:15:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "20m ago",
+      "timeLabel": "20m ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Why did a futurist with Huang’s prescient vision build a company where all roads lead to him?"
+    },
+    {
+      "title": "Rheinmetall reins in growth ambitions as Europe's rearmament boom hits hurdles",
+      "url": "https://www.cnbc.com/2026/11/27/rheinmetall-stock-cmd-guidance-sales.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T13:08:07+00:00",
+      "daysAgo": 0,
+      "timeAgo": "27m ago",
+      "timeLabel": "27m ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "The German arms maker vows a \"more prudent approch\" to forecast sales of tanks and ammunition."
+    },
+    {
+      "title": "Spain’s election could pull Madrid closer to Trump’s Washington",
+      "url": "https://www.cnbc.com/2026/11/27/spain-election-trump-sanchez.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T13:00:42+00:00",
+      "daysAgo": 0,
+      "timeAgo": "34m ago",
+      "timeLabel": "34m ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Spanish voters head to the polls on Sunday for a snap election that could bring socialist Prime Minister Pedro Sánchez's eight years in power to an end."
+    },
+    {
+      "title": "How to spot Black Friday shopping scams like ‘bogus boutiques’ and AI-generated product images",
+      "url": "https://www.marketwatch.com/story/how-to-spot-bogus-boutiques-and-other-black-friday-shopping-scams-86cc182d?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T12:42:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "53m ago",
+      "timeLabel": "53m ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "AI tools have made it even easier for scammers to create fake storefronts and misleading product listings."
+    },
+    {
+      "title": "A 10% cap on credit-card interest rates? Holiday shoppers shouldn’t bank on it.",
+      "url": "https://www.marketwatch.com/story/trump-is-open-to-capping-credit-card-interest-rates-but-holiday-shoppers-shouldnt-bank-on-it-yet-34260705?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T12:29:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1h ago",
+      "timeLabel": "1h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "As Americans prepare to pull out their credit cards for the holiday shopping season, President Donald Trump is saying he’s up for capping the interest rates they’re paying on their cards."
+    },
+    {
+      "title": "Nvidia’s stock has tumbled 27% over one chaotic month. The next big test lies in the week ahead",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-has-tumbled-27-over-one-chaotic-month-the-next-big-test-lies-in-the-week-ahead-06449777?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T12:29:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1h ago",
+      "timeLabel": "1h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Jensen Huang faces tough questions from Congress this week. Good luck pinning him down, one analyst says."
+    },
+    {
+      "title": "‘My life is in the stock market’: Recent volatility is shaking up holiday spending plans for these shoppers",
+      "url": "https://www.marketwatch.com/story/my-life-is-in-the-stock-market-recent-volatility-is-shaking-up-holiday-spending-plans-for-these-shoppers-bd9485b3?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T12:22:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1h ago",
+      "timeLabel": "1h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Consumers are adapting their year-end spending plans amid a shaky stock market."
+    },
+    {
+      "title": "My husband secretly sends his ex-wife $1,500 a month after she lost her job. We have $2.4 million saved. Has he lied by omission?",
+      "url": "https://www.marketwatch.com/story/my-husband-secretly-sends-his-ex-wife-1-500-a-month-after-she-lost-her-job-we-have-2-4-million-saved-has-he-lied-by-omission-ede1972a?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T12:15:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1h ago",
+      "timeLabel": "1h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "“He explained that he wasn’t trying to hide the payment, but his former wife lost her job in a medical billing company.”"
+    },
+    {
+      "title": "Stocks look like a Black Friday bargain. Read the fine print.",
+      "url": "https://www.marketwatch.com/story/stocks-look-like-a-black-friday-bargain-read-the-fine-print-b6546539?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T12:01:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1h ago",
+      "timeLabel": "1h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Analysts raised their profit forecasts for S&P 500 companies during the selloff. Plus, how to spot a bogus boutique and what Jensen Huang is doing in your 401(k)."
+    },
+    {
+      "title": "Tech German software major SAP is reportedly weighing cutting at least 10,000 jobs in AI push",
+      "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T11:49:18+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1h ago",
+      "timeLabel": "1h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -276,30 +552,7 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "Iran's foreign minister Abbas Araghchi said \"The incident is suspicious and looks like a precooked recipe for war.\""
-    },
-    {
-      "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
-      "url": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
-      "sources": [
-        "CNBC Economy & Central Banks",
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-27T02:04:09+00:00",
-      "daysAgo": 0,
-      "timeAgo": "1h ago",
-      "timeLabel": "1h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "AUD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "China's economy has been running at two speeds, with AI-related manufacturing and exports powering growth while household consumption has been lagging."
+      "summaryEn": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI."
     },
     {
       "title": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
@@ -307,7 +560,7 @@
       "sources": [
         "MarketWatch Top Stories"
       ],
-      "publishedAt": "2026-11-27T01:15:00+00:00",
+      "publishedAt": "2026-11-27T11:15:00+00:00",
       "daysAgo": 0,
       "timeAgo": "2h ago",
       "timeLabel": "2h ago",
@@ -324,34 +577,12 @@
       "summaryEn": "Doing nothing and maintaining an even temperament is often the work of gods."
     },
     {
-      "title": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
-      "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
+      "title": "SpaceX shares jump 4% amid tech rally and after Musk says he will expand on Trump Account share donations",
+      "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
       "sources": [
-        "MarketWatch Top Stories"
+        "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-27T01:00:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "2h ago",
-      "timeLabel": "2h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "“My wife stopped working outside the home in 1970.”"
-    },
-    {
-      "title": "We are living in perilous times if Nvidia CEO Jensen Huang dictates your 401(k) balance",
-      "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-27T00:31:00+00:00",
+      "publishedAt": "2026-11-27T10:20:39+00:00",
       "daysAgo": 0,
       "timeAgo": "3h ago",
       "timeLabel": "3h ago",
@@ -365,15 +596,15 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "Why did a futurist with Huang’s prescient vision build a company where all roads lead to him?"
+      "summaryEn": "SpaceX shares jumped in premarket trading after Elon Musk said on X that he would donate shares to American children every year."
     },
     {
-      "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
-      "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
+      "title": "Spain Votes: Will Sanchez's big gamble pay off?",
+      "url": "https://www.cnbc.com/video/2026/11/27/spain-election-preview-sanchez-feijoo-vox.html",
       "sources": [
         "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-27T00:22:29+00:00",
+      "publishedAt": "2026-11-27T09:44:38+00:00",
       "daysAgo": 0,
       "timeAgo": "3h ago",
       "timeLabel": "3h ago",
@@ -387,15 +618,59 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms."
+      "summaryEn": "Spain heads to the polls this Sunday in a snap general election that could end eight years of Socialist-led government and potentially bring the far-right into power for the first time in the country's modern democratic history. CNBC's Charlotte Reed reports."
     },
     {
-      "title": "‘I’ve been a stay-at-home mom’: I’m 50 and have a chronic illness. My husband lost his job. Should he raid his 401(k)?",
-      "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
+      "title": "ECB Consumer Expectations Survey results – October 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
       "sources": [
-        "MarketWatch Top Stories"
+        "ECB Press & Speeches"
       ],
-      "publishedAt": "2026-11-26T22:00:00+00:00",
+      "publishedAt": "2026-11-27T09:00:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "4h ago",
+      "timeLabel": "4h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "EUR",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Institutional brief (ECB Press & Speeches): ECB Consumer Expectations Survey results – October 2026. Directly impacts G8 rate pricing and cross-currency liquidity."
+    },
+    {
+      "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
+      "url": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
+      "sources": [
+        "CNBC Economy & Central Banks"
+      ],
+      "publishedAt": "2026-11-27T08:47:36+00:00",
+      "daysAgo": 0,
+      "timeAgo": "4h ago",
+      "timeLabel": "4h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model."
+    },
+    {
+      "title": "Private markets are more accessible than ever for investors. Getting out is another matter",
+      "url": "https://www.cnbc.com/2026/11/27/private-markets-retail-investors-liquidity.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T08:05:09+00:00",
       "daysAgo": 0,
       "timeAgo": "5h ago",
       "timeLabel": "5h ago",
@@ -409,139 +684,7 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "“Our financial and healthcare situation has become increasingly concerning.”"
-    },
-    {
-      "title": "I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
-      "url": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-26T21:45:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "“We have a house worth $450,000. Our combined annual income is $125,000.”"
-    },
-    {
-      "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
-      "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T21:13:17+00:00",
-      "daysAgo": 0,
-      "timeAgo": "6h ago",
-      "timeLabel": "6h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "President Donald Trump on Thursday deemed the latest gross domestic product revision a mistake, claiming that it should be \"immediately investigated.\""
-    },
-    {
-      "title": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
-      "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-26T19:00:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "8h ago",
-      "timeLabel": "8h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "“Retirement is a financial status, not an age.”"
-    },
-    {
-      "title": "Semiconductor chips are the new oil. Here's why",
-      "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T17:52:15+00:00",
-      "daysAgo": 0,
-      "timeAgo": "9h ago",
-      "timeLabel": "9h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "CAD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Semiconductor exports overtook oil and gas for the first time in 2026, as the AI boom fueled chip demand."
-    },
-    {
-      "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
-      "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T16:12:47+00:00",
-      "daysAgo": 0,
-      "timeAgo": "11h ago",
-      "timeLabel": "11h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Trump and NATO chief Mark Rutte urged Russia to avoid actions that could expand the war and called for a rapid peaceful resolution."
-    },
-    {
-      "title": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
-      "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-26T16:00:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "11h ago",
-      "timeLabel": "11h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "“Given my age, I never make a major new purchase without thinking about the future.”"
+      "summaryEn": "Retail access to private markets is growing, but PwC says education lags as redemption limits put liquidity risks in focus."
     },
     {
       "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
@@ -550,10 +693,10 @@
         "CNBC Economy & Central Banks",
         "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-26T15:28:26+00:00",
+      "publishedAt": "2026-11-27T06:50:38+00:00",
       "daysAgo": 0,
-      "timeAgo": "12h ago",
-      "timeLabel": "12h ago",
+      "timeAgo": "6h ago",
+      "timeLabel": "6h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -567,15 +710,38 @@
       "summaryEn": "De Cos will lead the ECB into a period of political uncertainty and choppy growth, after winning the backing needed to succeed Christine Lagarde next year."
     },
     {
-      "title": "My husband secretly sends his ex-wife $1,500 a month after she lost her job. We have $2.4 million saved. Has he lied by omission?",
-      "url": "https://www.marketwatch.com/story/my-husband-secretly-sends-his-ex-wife-1-500-a-month-after-she-lost-her-job-we-have-2-4-million-saved-has-he-lied-by-omission-ede1972a?mod=mw_rss_topstories",
+      "title": "China’s factories are growing profits again, but the AI boom is picking the winners",
+      "url": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
       "sources": [
-        "MarketWatch Top Stories"
+        "CNBC Economy & Central Banks",
+        "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-26T15:13:00+00:00",
+      "publishedAt": "2026-11-27T06:09:51+00:00",
       "daysAgo": 0,
-      "timeAgo": "12h ago",
-      "timeLabel": "12h ago",
+      "timeAgo": "7h ago",
+      "timeLabel": "7h ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "AUD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "China's economy has been running at two speeds, with AI-related manufacturing and exports powering growth while consumption, real estate investment lag."
+    },
+    {
+      "title": "Fast cars, big money: Why sportswear races into Formula 1 as sponsorship spending soars 75%",
+      "url": "https://www.cnbc.com/2026/11/27/nike-formula-1-sportswear-brands-sponsorship-adidas-puma.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T05:46:04+00:00",
+      "daysAgo": 0,
+      "timeAgo": "7h ago",
+      "timeLabel": "7h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -586,15 +752,59 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "“He explained that he wasn’t trying to hide the payment, but his former wife lost her job in a medical billing company.”"
+      "summaryEn": "Nike, Adidas and Puma are betting big on Formula 1 as the sport's cultural influence grows and younger audiences fuel its appeal."
     },
     {
-      "title": "This retired professor has reinvented himself — as a Taylor Swift scholar",
-      "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+      "title": "This 170-year historical study says ‘major market collapse’ is coming",
+      "url": "https://www.cnbc.com/2026/11/27/ai-bubble-burst-market-study.html",
       "sources": [
-        "MarketWatch Top Stories"
+        "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-26T14:35:00+00:00",
+      "publishedAt": "2026-11-27T04:07:07+00:00",
+      "daysAgo": 0,
+      "timeAgo": "9h ago",
+      "timeLabel": "9h ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "The artificial intelligence boom is flashing warning signs of speculative excess that rival those seen at the height of the dot-com bubble."
+    },
+    {
+      "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+      "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T03:30:23+00:00",
+      "daysAgo": 0,
+      "timeAgo": "10h ago",
+      "timeLabel": "10h ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Iran's foreign minister Abbas Araghchi said \"The incident is suspicious and looks like a precooked recipe for war.\""
+    },
+    {
+      "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
+      "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T00:22:29+00:00",
       "daysAgo": 0,
       "timeAgo": "13h ago",
       "timeLabel": "13h ago",
@@ -608,20 +818,20 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "His niece convinced him to spend his retirement analyzing Taylor Swift lyrics. Now he’s a successful podcaster at 72."
+      "summaryEn": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms."
     },
     {
-      "title": "What is ‘texture-maxxing’? The food trend putting crunch on the menu",
-      "url": "https://www.cnbc.com/2026/11/26/texture-maxxing-food-trends-gen-z.html",
+      "title": "The great aluminum squeeze: London supply crunch deepens as warehouse stocks slide",
+      "url": "https://www.cnbc.com/2026/11/26/lme-aluminum-squeeze-supply.html",
       "sources": [
         "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-26T13:34:51+00:00",
+      "publishedAt": "2026-11-26T14:09:10+00:00",
       "daysAgo": 0,
-      "timeAgo": "14h ago",
-      "timeLabel": "14h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
+      "timeAgo": "23h ago",
+      "timeLabel": "23h ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
       "impact": 8,
       "impactScore": 8,
       "currencyImpacts": [
@@ -630,7 +840,7 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "Texture-maxxing is the latest food trend taking social media by storm as consumers, driven by aesthetics and taste, are now looking for a sensory experience too."
+      "summaryEn": "Iran war disruption has driven the historic London Metal Exchange's warehoused stock of aluminum to levels not seen in decades — forcing it to act."
     },
     {
       "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
@@ -640,9 +850,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-26T12:46:55+00:00",
-      "daysAgo": 0,
-      "timeAgo": "14h ago",
-      "timeLabel": "14h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -662,9 +872,9 @@
         "ECB Press & Speeches"
       ],
       "publishedAt": "2026-11-26T12:30:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "15h ago",
-      "timeLabel": "15h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -678,37 +888,15 @@
       "summaryEn": "Institutional brief (ECB Press & Speeches): Meeting of 28-29 October 2026. Directly impacts G8 rate pricing and cross-currency liquidity."
     },
     {
-      "title": "Switzerland’s biggest bank set for showdown with lawmakers as capital fight intensifies amid crisis planning",
-      "url": "https://www.cnbc.com/2026/11/26/ubs-swiss-capital-rules-finma-crisis-plan.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T11:17:39+00:00",
-      "daysAgo": 0,
-      "timeAgo": "16h ago",
-      "timeLabel": "16h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "CHF",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Swiss regulator FINMA said UBS can execute its preferred crisis-resolution strategy, even as the bank faces a separate parliamentary fight over tougher capital requirements."
-    },
-    {
       "title": "The Nobel-winning science turning ‘water harvesting’ into a commercial race",
       "url": "https://www.cnbc.com/atmospheric-water-harvesting-nobel-prize-atoco-ahbstra/",
       "sources": [
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-26T11:01:13+00:00",
-      "daysAgo": 0,
-      "timeAgo": "16h ago",
-      "timeLabel": "16h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -720,190 +908,6 @@
         }
       ],
       "summaryEn": "Startups Atoco and Ahbstra are moving water-from-air machines toward commercial use, including for data centers and drought-hit communities."
-    },
-    {
-      "title": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
-      "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T09:02:30+00:00",
-      "daysAgo": 0,
-      "timeAgo": "18h ago",
-      "timeLabel": "18h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Norse Atlantic has suspended all flights and said it may it have to file for bankruptcy, a day after it warned its financial position was \"critical.\""
-    },
-    {
-      "title": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
-      "url": "https://www.cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T08:59:11+00:00",
-      "daysAgo": 0,
-      "timeAgo": "18h ago",
-      "timeLabel": "18h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        },
-        {
-          "code": "CAD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Latin America’s copper, oil, gas and rare earths could benefit from rising AI energy demand, if infrastructure and fiscal policy attract investment."
-    },
-    {
-      "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
-      "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T04:12:18+00:00",
-      "daysAgo": 0,
-      "timeAgo": "23h ago",
-      "timeLabel": "23h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        },
-        {
-          "code": "AUD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Proposed tariffs of 18% on Bangladesh, Cambodia, Thailand, and 20% on China and Vietnam, subject to their respective trade deals, offer India a competitive advantage."
-    },
-    {
-      "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
-      "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T03:13:43+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Denny's reaffirmed its longstanding ties with Jensen Huang following his return as Nvidia CEO, revealing that a plaque had been restored."
-    },
-    {
-      "title": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
-      "url": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T00:12:16+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Automakers in India are poised to sell over 30 million vehicles in the financial year ending March 2027."
-    },
-    {
-      "title": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
-      "url": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
-      "sources": [
-        "CNBC Economy & Central Banks"
-      ],
-      "publishedAt": "2026-11-25T21:56:43+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Alan Greenspan famously held the line on interest rates because he believed in the productivity promise of the internet boom. Why can't Kevin Warsh do the same?"
-    },
-    {
-      "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
-      "sources": [
-        "Federal Reserve Press"
-      ],
-      "publishedAt": "2026-11-25T20:00:00+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions"
-    },
-    {
-      "title": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
-      "sources": [
-        "Federal Reserve Press"
-      ],
-      "publishedAt": "2026-11-25T20:00:00+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans"
     }
   ]
 }
