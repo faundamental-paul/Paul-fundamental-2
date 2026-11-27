@@ -129,8 +129,8 @@
       </div>
     </section>
 
-    <!-- CURRENCY REASON BANNER (APPEARS WHEN CLICKING ANY G8 CURRENCY: USD, EUR, GBP, JPY, CHF, AUD, NZD, CAD) -->
-    <section id="currency-reason-box" class="hidden bg-[#0B1120] border border-slate-700 rounded-2xl p-4 sm:p-5 space-y-3"></section>
+    <!-- EXECUTIVE CURRENCY VERDICT & REASONS PANEL (APPEARS WHEN CLICKING ANY G8 CURRENCY) -->
+    <section id="currency-reason-box" class="hidden bg-[#0B1120] border border-slate-700 rounded-2xl p-4 sm:p-5 space-y-4"></section>
 
     <!-- PURE NEWS WIRE STREAM (3 SQUARE CARDS PER ROW ON DESKTOP) -->
     <section id="news-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></section>
@@ -157,62 +157,129 @@
       { code: 'CAD', label: '🇨🇦 CAD' }
     ];
 
+    // =========================================================================
+    // EXECUTIVE FUNDAMENTAL PROFILES (CENTRAL BANK, LABOR MARKET, INFLATION, YIELDS, RISK, GEOPOLITICS)
+    // =========================================================================
     const CURRENCY_PROFILES = {
       USD: {
         name: 'US Dollar',
         flag: '🇺🇸',
-        bank: 'Federal Reserve (Fed)',
-        coreBullishReason: 'Fed Governors Waller and Bowman back a December 9 rate hike (94% OIS priced) following a 10–2 hawkish vote split, lifting US 2Y yields to 4.66%, while Strait of Hormuz naval tensions and US–China tariff risks draw global safe-haven flows into USD.',
-        coreBearishRisk: 'Would turn BEARISH if US CPI/PCE inflation cools sharply, labor market data weakens, or Persian Gulf tensions de-escalate and trigger a Risk-On rotation out of safe havens.'
+        bank: 'Federal Reserve (Fed • 4.00%)',
+        baseBias: 'BULLISH',
+        tagline: 'Dolarul cumulează cel mai mare avantaj de randament din G8, o piață a muncii rezilientă și fluxurile dominante de refugiu (Safe-Haven).',
+        reasons: [
+          { title: '1. Banca Centrală & Dobânzile (Motorul #1)', text: 'Fed-ul este Hawkish. Guvernatorii Waller și Bowman susțin o nouă creștere de dobândă (+25 bps) pe 9 decembrie (prețuită la 94%), după votul intern de 10–2. Randamentele US pe 2 ani au urcat la 4.66%, atrăgând capital instituțional.' },
+          { title: '2. Piața Muncii (Labor Market) & Inflația', text: 'Angajările (NFP) și cererile de șomaj rămân solide, salariile susțin consumul, iar inflația din servicii (Core CPI/PCE) este lipicioasă peste ținta de 2.0% — deci Fed-ul nu are niciun motiv să relaxeze politica.' },
+          { title: '3. Regimul Risk-Off, Petrolul & Geopolitica', text: 'Piața este pe Risk-Off din cauza tensiunilor din Strâmtoarea Ormuz, crizei din Franța și tarifelor SUA–China. Ca monedă de refugiu (Safe-Haven) și cel mai mare producător de petrol (WTI peste $81.40/bbl), SUA câștigă dublu.' },
+          { title: '4. Poziționarea Instituțională (CFTC)', text: 'Fondurile instituționale își măresc cumpărările Net Long pe USD fără să fie încă o poziționare supra-aglomerată, lăsând spațiu pentru continuare.' }
+        ],
+        flipRisk: 'O deteriorare bruscă a pieței muncii (NFP slab / creșterea șomajului), o scădere rapidă a inflației Core CPI/PCE sau o detensionare în Orientul Mijlociu care să readucă apetitul pentru risc (Risk-On).',
+        bestPairs: 'AUD/USD Short • EUR/USD Short • NZD/USD Short'
       },
       EUR: {
         name: 'Euro',
         flag: '🇪🇺',
-        bank: 'European Central Bank (ECB)',
-        coreBullishReason: 'Would turn BULLISH only if France resolves its parliamentary budget crisis (compressing OAT–Bund spreads) and lower energy prices allow Eurozone growth and PMI data to rebound.',
-        coreBearishRisk: 'French parliamentary budget deadlock widened the 10Y OAT–Bund spread to +84 bps, while surging crude oil prices above $81.40/bbl worsen the Eurozone’s energy import bill and create stagflation pressure.'
+        bank: 'European Central Bank (ECB • 2.50%)',
+        baseBias: 'BEARISH',
+        tagline: 'Euro este prins într-o capcană de tip stagflație: scumpirea petrolului lovește economia europeană, iar criza bugetară din Franța sperie capitalul.',
+        reasons: [
+          { title: '1. Criza Politică & Fiscală din Franța (Motorul #1)', text: 'Blocajul bugetar din Parlamentul Franței înaintea votului de încredere a lărgit diferența dintre obligațiunile Franței și ale Germaniei (spread-ul OAT–Bund la +84 bps). Capitalul instituțional fuge direct din EUR în CHF și USD.' },
+          { title: '2. Șocul Energetic & Termenii Schimbului', text: 'Zona Euro este importator net de petrol și gaze. Petrolul WTI peste $81.40/bbl scumpește factura energetică a Europei, deteriorează balanța comercială și sufocă industria (Germania și Franța).' },
+          { title: '3. Piața Muncii & Creșterea Slabă vs. Dilema BCE', text: 'Creșterea economică (GDP/PMI) stagnează, iar companiile europene încetinesc angajările. Deși scumpirea energiei forțează BCE să pară defensivă, o majorare de dobândă pe o economie slabă creează teamă de recesiune, nu forță pentru EUR.' },
+          { title: '4. Divergența de Randamente (Bund 2Y vs. US 2Y)', text: 'Spread-ul de dobândă pe 2 ani rămâne larg în favoarea SUA (4.66%) și Marii Britanii, menținând presiunea de vânzare pe EUR.' }
+        ],
+        flipRisk: 'Trecerea unui buget credibil în Franța (scăderea spread-ului OAT–Bund sub +65 bps), combinată cu o scădere a petrolului sub $74/bbl și o revenire a datelor PMI din Germania.',
+        bestPairs: 'EUR/CHF Short • EUR/USD Short • EUR/CAD Short'
       },
       GBP: {
         name: 'British Pound',
         flag: '🇬🇧',
-        bank: 'Bank of England (BoE)',
-        coreBullishReason: 'BoE Governor Andrew Bailey warned that sticky services inflation and wage growth prevent policy relaxation, backed by a 7–2 MPC vote split (2 members voted for an immediate hike) and ~3 cumulative hikes priced into 2027.',
-        coreBearishRisk: 'Would turn BEARISH if UK services inflation or wage settlements decelerate rapidly, forcing the MPC to abandon its tightening path.'
+        bank: 'Bank of England (BoE • 4.00%)',
+        baseBias: 'BULLISH',
+        tagline: 'Lira sterlină are cea mai agresivă traiectorie de dobânzi din G8 (~3 creșteri prețuite până în 2027) susținută de salariile și inflația din servicii.',
+        reasons: [
+          { title: '1. Banca Centrală & Guvernatorul Bailey (Motorul #1)', text: 'Guvernatorul Andrew Bailey a avertizat că inflația din servicii este lipicioasă. Ultimul vot MPC a fost 7–2 (cu 2 membri votând deja pentru majorare imediată), iar piața prețuiește 76% șanse de hike pe 17 decembrie și ~3 creșteri în 2027.' },
+          { title: '2. Piața Muncii & Creșterea Salarială', text: 'Deși numărul angajărilor se temperează ușor, creșterea salariilor din sectorul privat din Marea Britanie rămâne mult prea ridicată pentru ținta de 2% a BoE, blocând orice tăiere de dobândă.' },
+          { title: '3. Randamentele Obligațiunilor (UK Gilt 2Y)', text: 'Randamentele pe 2 ani din Marea Britanie rămân printre cele mai mari din G8, oferind un avantaj masiv de carry față de AUD, EUR și CHF.' },
+          { title: '4. Limita Risk-Off', text: 'GBP bate clar monedele slabe (AUD, NZD, EUR), dar este mai vulnerabilă împotriva USD și CHF atunci când panica globală (Risk-Off) crește.' }
+        ],
+        flipRisk: 'O răcire bruscă a creșterii salariilor și a inflației din servicii din UK, sau o scădere severă pe bursele globale (Risk-Off extrem) care să lovească activele ciclice.',
+        bestPairs: 'GBP/AUD Long • GBP/NZD Long • EUR/GBP Short'
       },
       JPY: {
         name: 'Japanese Yen',
         flag: '🇯🇵',
-        bank: 'Bank of Japan (BoJ)',
-        coreBullishReason: 'BoJ Governor Kazuo Ueda signaled a rate hike from 1.25% to 1.50% on December 18 (78% priced) after an 8–1 hawkish dissent, while global Risk-Off sentiment accelerates the unwinding of short-JPY carry trades.',
-        coreBearishRisk: 'Would turn BEARISH if global equity markets rally strongly (Risk-On) or if the BoJ delays its December hike due to softer Japanese wage growth.'
+        bank: 'Bank of Japan (BoJ • 1.25%)',
+        baseBias: 'BULLISH',
+        tagline: 'Yenul este propulsat simultan de semnalele hawkish ale guvernatorului Ueda și de închiderea masivă a pozițiilor de carry trade în regim Risk-Off.',
+        reasons: [
+          { title: '1. Banca Centrală & Guvernatorul Ueda (Motorul #1)', text: 'Guvernatorul Kazuo Ueda a semnalat o nouă majorare de dobândă de la 1.25% la 1.50% pe 18 decembrie (prețuită la 78%), după ce un membru al board-ului a votat deja pentru creștere imediată.' },
+          { title: '2. Piața Muncii & Negocierile Salariale (Shunto)', text: 'Deficitul structural de forță de muncă din Japonia menține presiunea pe creșterea salariilor, oferind BoJ exact confirmarea de care are nevoie pentru a continua normalizarea dobânzilor.' },
+          { title: '3. Regimul Risk-Off & Carry Trade Unwind', text: 'Când piețele globale intră pe Risk-Off (tensiuni Ormuz, tarife China), fondurile lichidează împrumuturile ieftine în JPY și cumpără înapoi Yenul masiv.' },
+          { title: '4. Riscul Energetic', text: 'Singura frână pentru JPY este faptul că Japonia importă aproape tot petrolul și gazul, deci petrolul peste $81/bbl îi afectează balanța comercială.' }
+        ],
+        flipRisk: 'O revenire puternică pe Risk-On a burselor globale sau o amânare neașteptată a majorării de dobândă din 18 decembrie de către BoJ.',
+        bestPairs: 'AUD/JPY Short • NZD/JPY Short • EUR/JPY Short'
       },
       CHF: {
         name: 'Swiss Franc',
         flag: '🇨🇭',
-        bank: 'Swiss National Bank (SNB)',
-        coreBullishReason: 'CHF captures dominant institutional safe-haven inflows from both France’s political/fiscal crisis (OAT–Bund +84 bps) and Persian Gulf naval warnings, with SNB Chairman Schlegel confirming no FX intervention against Franc strength.',
-        coreBearishRisk: 'Would turn BEARISH if European political stress subsides and global Risk-On appetite pushes capital back into higher-yielding currencies.'
+        bank: 'Swiss National Bank (SNB • 0.00%)',
+        baseBias: 'BULLISH',
+        tagline: 'Francul elvețian este principalul magnet pentru capitalul defensiv european și global, fără nicio opoziție din partea Băncii Naționale a Elveției.',
+        reasons: [
+          { title: '1. Refugiu Direct din Criza Franței (Motorul #1)', text: 'Blocajul bugetar din Franța (spread OAT–Bund la +84 bps) împinge banii instituționali direct din Eurozona instabilă în cel mai sigur refugiu vecin: Francul Elvețian.' },
+          { title: '2. Poziția SNB & Guvernatorul Schlegel', text: 'Președintele SNB Martin Schlegel a confirmat că banca nu intervine pentru a slăbi Francul, deoarece un CHF puternic protejează Elveția de inflația importată din energie.' },
+          { title: '3. Excedentul de Cont Curent & Stabilitatea Internă', text: 'Elveția are excedent masiv de cont curent, șomaj extrem de mic (~2.5%) și datorie publică redusă — fundament structural impecabil în vremuri de criză.' },
+          { title: '4. Regimul Global Risk-Off', text: 'Tensiunile navale din Strâmtoarea Ormuz amplifică cererea globală de Safe-Haven pentru CHF.' }
+        ],
+        flipRisk: 'Rezolvarea crizei bugetare din Franța + detensionarea în Golful Persic (revenire pe Risk-On) sau o intervenție surpriză a SNB pe piața valutară.',
+        bestPairs: 'EUR/CHF Short • AUD/CHF Short • NZD/CHF Short'
       },
       AUD: {
         name: 'Australian Dollar',
         flag: '🇦🇺',
-        bank: 'Reserve Bank of Australia (RBA)',
-        coreBullishReason: 'Would turn BULLISH only if Australian inflation surprises sharply higher (erasing RBA cut bets) alongside major Chinese stimulus and a Risk-On rebound.',
-        coreBearishRisk: 'Australian rate futures price 1–2 RBA rate cuts—leaving AUD isolated as the sole G8 easing currency—compounded by new US–China tariff threats and Risk-Off pressure on industrial commodities.'
+        bank: 'Reserve Bank of Australia (RBA • 4.85%)',
+        baseBias: 'BEARISH',
+        tagline: 'Cea mai slabă monedă din G8: singura bancă centrală prețuită pe tăieri de dobândă, piață a muncii în răcire și lovită direct de tarifele SUA–China.',
+        reasons: [
+          { title: '1. Banca Centrală Izolată (Motorul #1 — Divergență Maximă)', text: 'RBA este singura bancă centrală din G8 pentru care piața prețuiește 1–2 tăieri de dobândă (de la 4.85% în jos). În timp ce Fed, BoE și BoJ strâng politica, Australia merge în sens invers, iar randamentele AU 2Y au scăzut.' },
+          { title: '2. Piața Muncii & Consumul în Răcire', text: 'Creșterea angajărilor full-time din Australia încetinește, creșterea salarială se temperează, iar gospodăriile îndatorate reduc consumul sub presiunea ratelor ipotecare.' },
+          { title: '3. Expunerea pe China & Tarifele Comerciale SUA–China', text: 'Australia depinde masiv de exporturile de minereu de fier și metale către China. Noile tarife comerciale ale SUA asupra Chinei lovesc direct cererea asiatică și folosesc AUD ca principal proxy de vânzare.' },
+          { title: '4. Regimul Global Risk-Off', text: 'Fiind o monedă ciclică (high-beta), AUD este vândută automat de fonduri când cresc tensiunile geopolitice și volatilitatea.' }
+        ],
+        flipRisk: 'O surpriză mare în sus pe inflația (CPI) din Australia care să anuleze tăierile RBA, combinată cu stimulente fiscale masive în China și revenire pe Risk-On.',
+        bestPairs: 'AUD/USD Short • GBP/AUD Long • AUD/CHF Short • AUD/JPY Short'
       },
       NZD: {
         name: 'New Zealand Dollar',
         flag: '🇳🇿',
-        bank: 'Reserve Bank of New Zealand (RBNZ)',
-        coreBullishReason: 'Would turn BULLISH if dairy export prices surge, RBNZ adopts a hawkish hold, and global Risk-On flows return to Asia-Pacific currencies.',
-        coreBearishRisk: 'RBNZ remains split 5–2 with sluggish domestic demand, while US–China trade tariff escalations and BoJ carry-trade unwinding weigh on high-beta Pacific currencies.'
+        bank: 'Reserve Bank of New Zealand (RBNZ • 3.75%)',
+        baseBias: 'BEARISH',
+        tagline: 'Dolarul neozeelandez suferă din cauza unei piețe a muncii slabe, a unui comitet RBNZ divizat și a presiunii comerciale din Asia-Pacific.',
+        reasons: [
+          { title: '1. Piața Muncii & Economia Internă Slabă (Motorul #1)', text: 'Piața muncii din Noua Zeelandă s-a deteriorat vizibil (rata șomajului a urcat, angajările au scăzut, iar cererea internă este anemică), ceea ce blochează orice intenție de înăsprire din partea RBNZ.' },
+          { title: '2. Banca Centrală Divizată (Vot 5–2)', text: 'Comitetul RBNZ este împărțit 5–2 și adoptă o poziție prudentă (Hold la 3.75%, cu doar 34% șanse de hike), pierzând atractivitatea de carry față de USD, GBP și JPY.' },
+          { title: '3. Tarifele SUA–China & Exporturile Agricole', text: 'Încetinirea comerțului din Asia-Pacific din cauza tarifelor SUA–China afectează cererea pentru exporturile Noii Zeelande (lactate, carne, lemn).' },
+          { title: '4. Regimul Global Risk-Off', text: 'Ca monedă ciclică cu lichiditate mai mică, NZD este penalizată puternic când fondurile închid pozițiile de carry trade și fug spre USD, CHF și JPY.' }
+        ],
+        flipRisk: 'O revenire puternică a prețurilor la lactate (GDT Auction), date peste așteptări pe piața muncii din Noua Zeelandă și un val global Risk-On.',
+        bestPairs: 'NZD/USD Short • GBP/NZD Long • NZD/CHF Short • NZD/JPY Short'
       },
       CAD: {
         name: 'Canadian Dollar',
         flag: '🇨🇦',
-        bank: 'Bank of Canada (BoC)',
-        coreBullishReason: 'WTI crude oil rallying above $81.40/bbl improves Canada’s energy export terms of trade and keeps the Bank of Canada alert to second-round inflation pass-through.',
-        coreBearishRisk: 'Would turn BEARISH if WTI crude oil drops back below $74/bbl or Canadian employment and GDP data cool enough to revive BoC rate-cut pricing.'
+        bank: 'Bank of Canada (BoC • 3.25%)',
+        baseBias: 'BULLISH',
+        tagline: 'Dolarul canadian este propulsat de discursul hawkish al guvernatorului Tiff Macklem și de raliul petrolului WTI peste $81.40/bbl.',
+        reasons: [
+          { title: '1. Guvernatorul Macklem & Așteptările de Hike (Motorul #1)', text: 'Guvernatorul BoC Tiff Macklem a surprins piețele avertizând că banca nu va repeta greșeala din pandemie și este gata să combată efectele de runda a doua ale scumpirii mărfurilor — urcând șansele de majorare a dobânzii în decembrie (46%+) și declanșând un short squeeze pe CAD.' },
+          { title: '2. Petrolul WTI peste $81.40/bbl & Termenii Schimbului', text: 'Ca exportator major de petrol, Canada câștigă masiv din scumpirea țițeiului cauzată de tensiunile din Strâmtoarea Ormuz, îmbunătățind balanța comercială.' },
+          { title: '3. Piața Muncii & Consumul (Limita Structurii)', text: 'Deși piața muncii și consumul gospodăriilor îndatorate din Canada au arătat semne de răcire, impulsul energetic și avertismentul pe inflație al lui Macklem domină pe termen scurt.' },
+          { title: '4. Unde Strălucește vs. Unde E Limitat', text: 'CAD bate clar monedele importatoare de energie sau dovish (EUR, AUD, NZD), dar rămâne în urma USD care are randament 2Y la 4.66% și statut Safe-Haven.' }
+        ],
+        flipRisk: 'O scădere a petrolului WTI sub $74/bbl (detensionare în Golful Persic) sau un raport slab al locurilor de muncă din Canada care să șteargă așteptările de hike din decembrie.',
+        bestPairs: 'EUR/CAD Short • AUD/CAD Short • NZD/CAD Short'
       }
     };
 
@@ -438,7 +505,7 @@
 
     function detectImpactsFromText(text) {
       const low = text.toLowerCase();
-      const bearish = /\b(cut|dovish|drop|fall|slump|plunge|crisis|deadlock|weak|slow)\b/.test(low);
+      const bearish = /\b(cut|dovish|drop|fall|slump|plunge|crisis|deadlock|weak|slow|tariff|tariffs|war|hormuz|risk-off)\b/.test(low);
       const list = [];
       const map = [
         ['USD', /\b(fed|fomc|powell|waller|bowman|dollar|usd|treasury|us |u\.s\.)\b/],
@@ -448,11 +515,18 @@
         ['CHF', /\b(snb|swiss|franc|chf|schlegel)\b/],
         ['AUD', /\b(rba|australia|aussie|aud|bullock|china)\b/],
         ['NZD', /\b(rbnz|new zealand|kiwi|nzd)\b/],
-        ['CAD', /\b(boc|bank of canada|canada|loonie|cad|oil|crude|opec)\b/]
+        ['CAD', /\b(boc|bank of canada|canada|loonie|cad|oil|crude|opec|macklem)\b/]
       ];
       map.forEach(([code, regex]) => {
         if (regex.test(low)) {
-          const dir = (bearish && code !== 'USD' && code !== 'CHF') ? 'BEARISH' : 'BULLISH';
+          let dir = 'BULLISH';
+          if (code === 'AUD' || code === 'NZD') {
+            dir = /\b(hike|hawkish|surge|rally|stimulus|beat)\b/.test(low) && !bearish ? 'BULLISH' : 'BEARISH';
+          } else if (code === 'EUR') {
+            dir = /\b(hike|hawkish|beat|rebound)\b/.test(low) && !bearish ? 'BULLISH' : 'BEARISH';
+          } else if (bearish && code !== 'USD' && code !== 'CHF' && code !== 'JPY') {
+            dir = 'BEARISH';
+          }
           list.push({ code, dir });
         }
       });
@@ -555,59 +629,77 @@
         .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
         .filter(n => n.impacts.some(i => i.code === activeAsset));
 
-      let bullScore = 0;
-      let bearScore = 0;
-      relatedStories.forEach(n => {
+      let score = profile.baseBias === 'BULLISH' ? 12 : -12;
+      relatedStories.slice(0, 6).forEach(n => {
         const imp = n.impacts.find(i => i.code === activeAsset);
         if (imp) {
-          if (imp.dir === 'BULLISH') bullScore += n.impact;
-          else bearScore += n.impact;
+          score += imp.dir === 'BULLISH' ? 3 : -3;
         }
       });
 
-      const isBullish = bullScore >= bearScore;
-      const verdictText = isBullish ? 'BULLISH ▲' : 'BEARISH ▼';
+      const isBullish = score >= 0;
+      const verdictText = isBullish ? 'BULLISH ▲ (PUTERNIC)' : 'BEARISH ▼ (SLAB)';
       const verdictBadge = isBullish
         ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
         : 'bg-rose-500/20 text-rose-300 border-rose-500/40';
       const borderAccent = isBullish ? 'border-l-emerald-500' : 'border-l-rose-500';
-      const activePrimaryReason = isBullish ? profile.coreBullishReason : profile.coreBearishRisk;
-      const flipReason = isBullish ? profile.coreBearishRisk : profile.coreBullishReason;
+      const latestStory = relatedStories[0];
 
       box.classList.remove('hidden');
       box.innerHTML = `
-        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
-          <div class="flex flex-wrap items-center gap-2.5">
-            <span class="text-2xl">${profile.flag}</span>
-            <div>
-              <div class="flex flex-wrap items-center gap-2">
-                <h2 class="text-base sm:text-lg font-extrabold text-white">${activeAsset} — ${profile.name} (${profile.bank})</h2>
-                <span class="px-2.5 py-0.5 rounded-full border font-mono text-xs font-extrabold ${verdictBadge}">
-                  CURRENT BIAS: ${verdictText}
-                </span>
-              </div>
-              <p class="text-xs text-slate-400">Live fundamental driver breakdown calculated from ${relatedStories.length} active ${activeAsset} headlines</p>
+        <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-800 pb-3.5">
+          <div class="space-y-1">
+            <div class="flex flex-wrap items-center gap-2.5">
+              <span class="text-2xl">${profile.flag}</span>
+              <h2 class="text-base sm:text-lg font-extrabold text-white">${activeAsset} — ${profile.name} (${profile.bank})</h2>
+              <span class="px-3 py-0.5 rounded-full border font-mono text-xs font-extrabold ${verdictBadge}">
+                VERDICT: ${verdictText}
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30 font-mono text-[11px] font-bold">
+                REGIM: RISK-OFF
+              </span>
             </div>
+            <p class="text-xs sm:text-sm text-slate-300 italic">${profile.tagline}</p>
           </div>
 
-          <button id="btn-clear-currency" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono font-bold text-slate-200 transition">
+          <button id="btn-clear-currency" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono font-bold text-slate-200 transition shrink-0">
             Show All G8 ✕
           </button>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3.5">
-          <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1.5 border-l-4 ${borderAccent}">
-            <div class="font-mono text-xs font-extrabold uppercase ${isBullish ? 'text-emerald-400' : 'text-rose-400'}">
-              Why ${activeAsset} Is Currently ${isBullish ? 'BULLISH' : 'BEARISH'} (Primary Institutional Reason)
+        <!-- 4 STRUCTURED PILLARS (CENTRAL BANK, LABOR MARKET & INFLATION, RISK REGIME & GEOPOLITICS, POSITIONING) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          ${profile.reasons.map(r => `
+            <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1 border-l-4 ${borderAccent}">
+              <div class="font-mono text-xs font-extrabold ${isBullish ? 'text-emerald-400' : 'text-rose-400'}">${r.title}</div>
+              <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">${r.text}</p>
             </div>
-            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">${activePrimaryReason}</p>
+          `).join('')}
+        </div>
+
+        <!-- LIVE LATEST CATALYST + FLIP RISK & PAIRS -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 pt-1">
+          <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1 border-l-4 border-l-amber-400">
+            <div class="font-mono text-xs font-extrabold uppercase text-amber-300">
+              Ultimul Catalizator Live (${latestStory ? formatRealTimeAgo(latestStory.publishedAt) : 'Live'})
+            </div>
+            <p class="text-xs text-slate-200 leading-relaxed">
+              ${latestStory ? latestStory.title : 'Monitorizare continuă a fluxurilor G8.'}
+            </p>
           </div>
 
-          <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1.5 border-l-4 border-l-sky-500">
+          <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1 border-l-4 border-l-sky-500">
             <div class="font-mono text-xs font-extrabold uppercase text-sky-400">
-              What Would Make ${activeAsset} Flip ${isBullish ? 'BEARISH' : 'BULLISH'}
+              Ce ar putea întoarce ${activeAsset} (Invalidarea)
             </div>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${flipReason}</p>
+            <p class="text-xs text-slate-300 leading-relaxed">${profile.flipRisk}</p>
+          </div>
+
+          <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1 border-l-4 border-l-indigo-500">
+            <div class="font-mono text-xs font-extrabold uppercase text-indigo-400">
+              Cele mai clare perechi (Divergență Maximă)
+            </div>
+            <p class="text-xs sm:text-sm font-mono font-bold text-white leading-relaxed">${profile.bestPairs}</p>
           </div>
         </div>
       `;
@@ -829,7 +921,7 @@
             if (!title || title.length < 18) return;
             const rawDesc = (item.description || item.content || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
             const fullText = `${title} ${rawDesc}`;
-            if (!/\b(fed|fomc|powell|waller|bowman|ecb|lagarde|de cos|boe|bailey|boj|ueda|rba|snb|boc|rate|inflation|cpi|pce|gdp|pmi|jobs|nfp|dollar|usd|euro|eur|sterling|gbp|yen|jpy|franc|chf|aussie|aud|kiwi|nzd|loonie|cad|forex|oil|crude|opec|hormuz|tariff|sanction|treasury|yield|ing)\b/i.test(fullText)) return;
+            if (!/\b(fed|fomc|powell|waller|bowman|ecb|lagarde|de cos|boe|bailey|boj|ueda|rba|snb|boc|macklem|rate|inflation|cpi|pce|gdp|pmi|jobs|nfp|dollar|usd|euro|eur|sterling|gbp|yen|jpy|franc|chf|aussie|aud|kiwi|nzd|loonie|cad|forex|oil|crude|opec|hormuz|tariff|sanction|treasury|yield|ing)\b/i.test(fullText)) return;
 
             let pubDate = item.pubDate ? new Date(item.pubDate.replace(' ', 'T') + (item.pubDate.includes('Z') || item.pubDate.includes('+') ? '' : 'Z')) : new Date();
             if (isNaN(pubDate.getTime())) pubDate = new Date();
