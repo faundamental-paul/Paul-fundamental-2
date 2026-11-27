@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T21:22:18.268345+00:00",
+  "updatedAt": "2026-11-27T03:43:34.992623+00:00",
   "storyCount": 40,
   "stories": [
     {
@@ -8,7 +8,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707853+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645769+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -34,7 +34,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707817+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645733+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -56,7 +56,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707773+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645692+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -78,7 +78,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707734+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645654+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -104,7 +104,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707705+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645624+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -126,7 +126,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707667+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645586+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -148,7 +148,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707633+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645553+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -174,7 +174,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707594+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645513+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -196,7 +196,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707559+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645479+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -218,7 +218,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-26T21:22:18.707431+00:00",
+      "publishedAt": "2026-11-27T03:43:35.645374+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -235,12 +235,79 @@
       "summaryEn": "HUNGARY: Hungary’s labour market appears to have shaken off its summer weakness. But still-elevated wage pressures, worsening firing intentions and persistent geopolitical uncertainty keep us cautious about the outlook"
     },
     {
-      "title": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
-      "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
+      "title": "Stock futures tick higher as Wall Street gets set to wrap up a volatile holiday week: Live updates",
+      "url": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T03:40:42+00:00",
+      "daysAgo": 0,
+      "timeAgo": "2m ago",
+      "timeLabel": "2m ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Investors are wrapping up a turbulent trading week that was shortened due to the Thanksgiving holiday."
+    },
+    {
+      "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+      "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T03:30:23+00:00",
+      "daysAgo": 0,
+      "timeAgo": "13m ago",
+      "timeLabel": "13m ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Iran's foreign minister Abbas Araghchi said \"The incident is suspicious and looks like a precooked recipe for war.\""
+    },
+    {
+      "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
+      "url": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
+      "sources": [
+        "CNBC Economy & Central Banks",
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T02:04:09+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1h ago",
+      "timeLabel": "1h ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "AUD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "China's economy has been running at two speeds, with AI-related manufacturing and exports powering growth while household consumption has been lagging."
+    },
+    {
+      "title": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
+      "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
       "sources": [
         "MarketWatch Top Stories"
       ],
-      "publishedAt": "2026-11-26T19:00:00+00:00",
+      "publishedAt": "2026-11-27T01:15:00+00:00",
       "daysAgo": 0,
       "timeAgo": "2h ago",
       "timeLabel": "2h ago",
@@ -254,7 +321,7 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "“Retirement is a financial status, not an age.”"
+      "summaryEn": "Doing nothing and maintaining an even temperament is often the work of gods."
     },
     {
       "title": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
@@ -262,7 +329,7 @@
       "sources": [
         "MarketWatch Top Stories"
       ],
-      "publishedAt": "2026-11-26T18:30:00+00:00",
+      "publishedAt": "2026-11-27T01:00:00+00:00",
       "daysAgo": 0,
       "timeAgo": "2h ago",
       "timeLabel": "2h ago",
@@ -279,15 +346,15 @@
       "summaryEn": "“My wife stopped working outside the home in 1970.”"
     },
     {
-      "title": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
-      "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
+      "title": "We are living in perilous times if Nvidia CEO Jensen Huang dictates your 401(k) balance",
+      "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
       "sources": [
         "MarketWatch Top Stories"
       ],
-      "publishedAt": "2026-11-26T16:30:00+00:00",
+      "publishedAt": "2026-11-27T00:31:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "4h ago",
-      "timeLabel": "4h ago",
+      "timeAgo": "3h ago",
+      "timeLabel": "3h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -298,7 +365,139 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "Doing nothing and maintaining an even temperament is often the work of gods."
+      "summaryEn": "Why did a futurist with Huang’s prescient vision build a company where all roads lead to him?"
+    },
+    {
+      "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
+      "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T00:22:29+00:00",
+      "daysAgo": 0,
+      "timeAgo": "3h ago",
+      "timeLabel": "3h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms."
+    },
+    {
+      "title": "‘I’ve been a stay-at-home mom’: I’m 50 and have a chronic illness. My husband lost his job. Should he raid his 401(k)?",
+      "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-26T22:00:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "5h ago",
+      "timeLabel": "5h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "“Our financial and healthcare situation has become increasingly concerning.”"
+    },
+    {
+      "title": "I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
+      "url": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-26T21:45:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "5h ago",
+      "timeLabel": "5h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "“We have a house worth $450,000. Our combined annual income is $125,000.”"
+    },
+    {
+      "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
+      "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-26T21:13:17+00:00",
+      "daysAgo": 0,
+      "timeAgo": "6h ago",
+      "timeLabel": "6h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "President Donald Trump on Thursday deemed the latest gross domestic product revision a mistake, claiming that it should be \"immediately investigated.\""
+    },
+    {
+      "title": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
+      "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-26T19:00:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "8h ago",
+      "timeLabel": "8h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "“Retirement is a financial status, not an age.”"
+    },
+    {
+      "title": "Semiconductor chips are the new oil. Here's why",
+      "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-26T17:52:15+00:00",
+      "daysAgo": 0,
+      "timeAgo": "9h ago",
+      "timeLabel": "9h ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "CAD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Semiconductor exports overtook oil and gas for the first time in 2026, as the AI boom fueled chip demand."
     },
     {
       "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
@@ -308,8 +507,8 @@
       ],
       "publishedAt": "2026-11-26T16:12:47+00:00",
       "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
+      "timeAgo": "11h ago",
+      "timeLabel": "11h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -330,8 +529,8 @@
       ],
       "publishedAt": "2026-11-26T16:00:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
+      "timeAgo": "11h ago",
+      "timeLabel": "11h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -345,28 +544,6 @@
       "summaryEn": "“Given my age, I never make a major new purchase without thinking about the future.”"
     },
     {
-      "title": "We are living in perilous times if Nvidia CEO Jensen Huang dictates your 401(k) balance",
-      "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-26T15:30:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Why did a futurist with Huang’s prescient vision build a company where all roads lead to him?"
-    },
-    {
       "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
       "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
       "sources": [
@@ -375,8 +552,8 @@
       ],
       "publishedAt": "2026-11-26T15:28:26+00:00",
       "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
+      "timeAgo": "12h ago",
+      "timeLabel": "12h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -397,8 +574,8 @@
       ],
       "publishedAt": "2026-11-26T15:13:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "6h ago",
-      "timeLabel": "6h ago",
+      "timeAgo": "12h ago",
+      "timeLabel": "12h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -419,8 +596,8 @@
       ],
       "publishedAt": "2026-11-26T14:35:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "6h ago",
-      "timeLabel": "6h ago",
+      "timeAgo": "13h ago",
+      "timeLabel": "13h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -441,8 +618,8 @@
       ],
       "publishedAt": "2026-11-26T13:34:51+00:00",
       "daysAgo": 0,
-      "timeAgo": "7h ago",
-      "timeLabel": "7h ago",
+      "timeAgo": "14h ago",
+      "timeLabel": "14h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -464,8 +641,8 @@
       ],
       "publishedAt": "2026-11-26T12:46:55+00:00",
       "daysAgo": 0,
-      "timeAgo": "8h ago",
-      "timeLabel": "8h ago",
+      "timeAgo": "14h ago",
+      "timeLabel": "14h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -486,8 +663,8 @@
       ],
       "publishedAt": "2026-11-26T12:30:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "8h ago",
-      "timeLabel": "8h ago",
+      "timeAgo": "15h ago",
+      "timeLabel": "15h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -508,8 +685,8 @@
       ],
       "publishedAt": "2026-11-26T11:17:39+00:00",
       "daysAgo": 0,
-      "timeAgo": "10h ago",
-      "timeLabel": "10h ago",
+      "timeAgo": "16h ago",
+      "timeLabel": "16h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -530,8 +707,8 @@
       ],
       "publishedAt": "2026-11-26T11:01:13+00:00",
       "daysAgo": 0,
-      "timeAgo": "10h ago",
-      "timeLabel": "10h ago",
+      "timeAgo": "16h ago",
+      "timeLabel": "16h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -552,8 +729,8 @@
       ],
       "publishedAt": "2026-11-26T09:02:30+00:00",
       "daysAgo": 0,
-      "timeAgo": "12h ago",
-      "timeLabel": "12h ago",
+      "timeAgo": "18h ago",
+      "timeLabel": "18h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -574,8 +751,8 @@
       ],
       "publishedAt": "2026-11-26T08:59:11+00:00",
       "daysAgo": 0,
-      "timeAgo": "12h ago",
-      "timeLabel": "12h ago",
+      "timeAgo": "18h ago",
+      "timeLabel": "18h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -593,94 +770,6 @@
       "summaryEn": "Latin America’s copper, oil, gas and rare earths could benefit from rising AI energy demand, if infrastructure and fiscal policy attract investment."
     },
     {
-      "title": "Taking on Starlink: Europe’s largest satellite factory opens in push to rival Musk",
-      "url": "https://www.cnbc.com/2026/11/26/starlink-satellites-aerospacelab-factory-belgium.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T07:45:05+00:00",
-      "daysAgo": 0,
-      "timeAgo": "13h ago",
-      "timeLabel": "13h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "EUR",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "The 20,000-square-meter mega factory will be able to produce up to 500 satellites annually, making it the world's third-largest satellite production site."
-    },
-    {
-      "title": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
-      "url": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T07:30:11+00:00",
-      "daysAgo": 0,
-      "timeAgo": "13h ago",
-      "timeLabel": "13h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Xpeng Co-President Brian Gu shared his humanoid robot predictions with CNBC in an interview Thursday."
-    },
-    {
-      "title": "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing",
-      "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T07:23:42+00:00",
-      "daysAgo": 0,
-      "timeAgo": "13h ago",
-      "timeLabel": "13h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "EUR",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Goldman Sachs Alternatives' inaugural survey of high-net-worth investors found they're increasingly looking to alternatives amid turbulent markets."
-    },
-    {
-      "title": "North Korea's Kim calls for nuclear arsenal expansion, says status 'will never change'",
-      "url": "https://www.cnbc.com/2026/11/26/north-korea-kim-nuclear-weapons-expansion.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T05:50:34+00:00",
-      "daysAgo": 0,
-      "timeAgo": "15h ago",
-      "timeLabel": "15h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Kim Jong Un called for wider use of tactical nuclear weapons and an expanded arsenal, rejecting international denuclearization pressure."
-    },
-    {
       "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
       "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
       "sources": [
@@ -688,8 +777,8 @@
       ],
       "publishedAt": "2026-11-26T04:12:18+00:00",
       "daysAgo": 0,
-      "timeAgo": "17h ago",
-      "timeLabel": "17h ago",
+      "timeAgo": "23h ago",
+      "timeLabel": "23h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -707,37 +796,15 @@
       "summaryEn": "Proposed tariffs of 18% on Bangladesh, Cambodia, Thailand, and 20% on China and Vietnam, subject to their respective trade deals, offer India a competitive advantage."
     },
     {
-      "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-      "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-26T03:19:44+00:00",
-      "daysAgo": 0,
-      "timeAgo": "18h ago",
-      "timeLabel": "18h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "S&P Global Ratings said Nvidia's credit rating could be cut by one notch as it flagged \"rising\" management and governance risk at the chipmaker."
-    },
-    {
       "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
       "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
       "sources": [
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-26T03:13:43+00:00",
-      "daysAgo": 0,
-      "timeAgo": "18h ago",
-      "timeLabel": "18h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -757,9 +824,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-26T00:12:16+00:00",
-      "daysAgo": 0,
-      "timeAgo": "21h ago",
-      "timeLabel": "21h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -779,9 +846,9 @@
         "CNBC Economy & Central Banks"
       ],
       "publishedAt": "2026-11-25T21:56:43+00:00",
-      "daysAgo": 0,
-      "timeAgo": "23h ago",
-      "timeLabel": "23h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -837,76 +904,6 @@
         }
       ],
       "summaryEn": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans"
-    },
-    {
-      "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
-      "sources": [
-        "ECB Press & Speeches"
-      ],
-      "publishedAt": "2026-11-25T17:30:00+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "EUR",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Institutional brief (ECB Press & Speeches): ECB and Sveriges Riksbank conclude agreement for Sweden to join T2. Directly impacts G8 rate pricing and cross-currency liquidity."
-    },
-    {
-      "title": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
-      "url": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-25T17:28:24+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        },
-        {
-          "code": "AUD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Nvidia GPU sellers are seeking new buyers after new U.S. rules tightened remote access to advanced AI chips for China-linked customers"
-    },
-    {
-      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
-      "sources": [
-        "CNBC Economy & Central Banks"
-      ],
-      "publishedAt": "2026-11-25T16:17:13+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets."
     }
   ]
 }
