@@ -158,7 +158,7 @@
     ];
 
     // =========================================================================
-    // EXECUTIVE FUNDAMENTAL PROFILES (CENTRAL BANK, LABOR MARKET, INFLATION, YIELDS, RISK, GEOPOLITICS)
+    // EXECUTIVE FUNDAMENTAL PROFILES IN ENGLISH (CENTRAL BANK, LABOR MARKET, INFLATION, YIELDS, RISK, GEOPOLITICS)
     // =========================================================================
     const CURRENCY_PROFILES = {
       USD: {
@@ -166,14 +166,14 @@
         flag: '🇺🇸',
         bank: 'Federal Reserve (Fed • 4.00%)',
         baseBias: 'BULLISH',
-        tagline: 'Dolarul cumulează cel mai mare avantaj de randament din G8, o piață a muncii rezilientă și fluxurile dominante de refugiu (Safe-Haven).',
+        tagline: 'The US Dollar combines the strongest yield advantage in the G8, a resilient labor market, and dominant safe-haven inflows.',
         reasons: [
-          { title: '1. Banca Centrală & Dobânzile (Motorul #1)', text: 'Fed-ul este Hawkish. Guvernatorii Waller și Bowman susțin o nouă creștere de dobândă (+25 bps) pe 9 decembrie (prețuită la 94%), după votul intern de 10–2. Randamentele US pe 2 ani au urcat la 4.66%, atrăgând capital instituțional.' },
-          { title: '2. Piața Muncii (Labor Market) & Inflația', text: 'Angajările (NFP) și cererile de șomaj rămân solide, salariile susțin consumul, iar inflația din servicii (Core CPI/PCE) este lipicioasă peste ținta de 2.0% — deci Fed-ul nu are niciun motiv să relaxeze politica.' },
-          { title: '3. Regimul Risk-Off, Petrolul & Geopolitica', text: 'Piața este pe Risk-Off din cauza tensiunilor din Strâmtoarea Ormuz, crizei din Franța și tarifelor SUA–China. Ca monedă de refugiu (Safe-Haven) și cel mai mare producător de petrol (WTI peste $81.40/bbl), SUA câștigă dublu.' },
-          { title: '4. Poziționarea Instituțională (CFTC)', text: 'Fondurile instituționale își măresc cumpărările Net Long pe USD fără să fie încă o poziționare supra-aglomerată, lăsând spațiu pentru continuare.' }
+          { title: '1. Central Bank & Interest Rates (Driver #1)', text: 'The Fed remains firmly hawkish. Governors Waller and Bowman backed another +25 bps hike on December 9 (94% OIS priced) following a 10–2 FOMC vote split, pushing US 2Y Treasury yields up to 4.66%.' },
+          { title: '2. Labor Market & Sticky Services Inflation', text: 'Non-Farm Payrolls (NFP) and jobless claims remain resilient, wage growth supports consumer spending, and Core CPI/PCE inflation stays sticky above the 2.0% target—giving the Fed zero reason to ease.' },
+          { title: '3. Risk-Off Regime, Crude Oil & Geopolitics', text: 'Global markets are in Risk-Off mode due to Strait of Hormuz naval warnings, France’s fiscal crisis, and US–China tariffs. As the premier safe-haven and world’s top oil producer (WTI above $81.40/bbl), USD wins on both fronts.' },
+          { title: '4. Institutional Positioning (CFTC)', text: 'Institutional asset managers and leveraged funds are expanding Net-Long USD exposure without hitting crowded extremes, leaving room for trend continuation.' }
         ],
-        flipRisk: 'O deteriorare bruscă a pieței muncii (NFP slab / creșterea șomajului), o scădere rapidă a inflației Core CPI/PCE sau o detensionare în Orientul Mijlociu care să readucă apetitul pentru risc (Risk-On).',
+        flipRisk: 'A sharp deterioration in the US labor market (weak NFP / rising unemployment), a rapid drop in Core CPI/PCE inflation, or Persian Gulf de-escalation triggering a Risk-On rotation.',
         bestPairs: 'AUD/USD Short • EUR/USD Short • NZD/USD Short'
       },
       EUR: {
@@ -181,14 +181,14 @@
         flag: '🇪🇺',
         bank: 'European Central Bank (ECB • 2.50%)',
         baseBias: 'BEARISH',
-        tagline: 'Euro este prins într-o capcană de tip stagflație: scumpirea petrolului lovește economia europeană, iar criza bugetară din Franța sperie capitalul.',
+        tagline: 'The Euro is trapped in a stagflationary squeeze: surging oil prices hurt European terms of trade while France’s budget crisis triggers capital outflows.',
         reasons: [
-          { title: '1. Criza Politică & Fiscală din Franța (Motorul #1)', text: 'Blocajul bugetar din Parlamentul Franței înaintea votului de încredere a lărgit diferența dintre obligațiunile Franței și ale Germaniei (spread-ul OAT–Bund la +84 bps). Capitalul instituțional fuge direct din EUR în CHF și USD.' },
-          { title: '2. Șocul Energetic & Termenii Schimbului', text: 'Zona Euro este importator net de petrol și gaze. Petrolul WTI peste $81.40/bbl scumpește factura energetică a Europei, deteriorează balanța comercială și sufocă industria (Germania și Franța).' },
-          { title: '3. Piața Muncii & Creșterea Slabă vs. Dilema BCE', text: 'Creșterea economică (GDP/PMI) stagnează, iar companiile europene încetinesc angajările. Deși scumpirea energiei forțează BCE să pară defensivă, o majorare de dobândă pe o economie slabă creează teamă de recesiune, nu forță pentru EUR.' },
-          { title: '4. Divergența de Randamente (Bund 2Y vs. US 2Y)', text: 'Spread-ul de dobândă pe 2 ani rămâne larg în favoarea SUA (4.66%) și Marii Britanii, menținând presiunea de vânzare pe EUR.' }
+          { title: '1. French Political & Fiscal Crisis (Driver #1)', text: 'Parliamentary budget gridlock in France ahead of a confidence vote widened the benchmark 10Y OAT–Bund sovereign spread to +84 bps, driving institutional capital straight out of EUR into CHF and USD.' },
+          { title: '2. Energy Shock & Deteriorating Terms of Trade', text: 'The Eurozone is a net importer of oil and LNG. WTI crude breaking above $81.40/bbl inflates Europe’s energy import bill, worsens its trade balance, and pressures German and French industry.' },
+          { title: '3. Soft Labor Market & Growth vs. ECB Dilemma', text: 'Eurozone GDP and PMI growth remain sluggish and hiring is cooling. Even if energy costs force defensive ECB rhetoric, tightening into a weak economy fuels recession fears rather than currency strength.' },
+          { title: '4. 2-Year Yield Spread Disadvantage', text: 'Short-end yield spreads (German 2Y vs. US 2Y at 4.66% and UK 2Y) remain heavily skewed against the Euro.' }
         ],
-        flipRisk: 'Trecerea unui buget credibil în Franța (scăderea spread-ului OAT–Bund sub +65 bps), combinată cu o scădere a petrolului sub $74/bbl și o revenire a datelor PMI din Germania.',
+        flipRisk: 'Passage of a credible French budget (compressing OAT–Bund spreads below +65 bps), combined with crude oil dropping below $74/bbl and stronger German PMI data.',
         bestPairs: 'EUR/CHF Short • EUR/USD Short • EUR/CAD Short'
       },
       GBP: {
@@ -196,14 +196,14 @@
         flag: '🇬🇧',
         bank: 'Bank of England (BoE • 4.00%)',
         baseBias: 'BULLISH',
-        tagline: 'Lira sterlină are cea mai agresivă traiectorie de dobânzi din G8 (~3 creșteri prețuite până în 2027) susținută de salariile și inflația din servicii.',
+        tagline: 'Sterling carries the steepest tightening trajectory in the G8 (~3 hikes priced into 2027), underpinned by sticky wage growth and services inflation.',
         reasons: [
-          { title: '1. Banca Centrală & Guvernatorul Bailey (Motorul #1)', text: 'Guvernatorul Andrew Bailey a avertizat că inflația din servicii este lipicioasă. Ultimul vot MPC a fost 7–2 (cu 2 membri votând deja pentru majorare imediată), iar piața prețuiește 76% șanse de hike pe 17 decembrie și ~3 creșteri în 2027.' },
-          { title: '2. Piața Muncii & Creșterea Salarială', text: 'Deși numărul angajărilor se temperează ușor, creșterea salariilor din sectorul privat din Marea Britanie rămâne mult prea ridicată pentru ținta de 2% a BoE, blocând orice tăiere de dobândă.' },
-          { title: '3. Randamentele Obligațiunilor (UK Gilt 2Y)', text: 'Randamentele pe 2 ani din Marea Britanie rămân printre cele mai mari din G8, oferind un avantaj masiv de carry față de AUD, EUR și CHF.' },
-          { title: '4. Limita Risk-Off', text: 'GBP bate clar monedele slabe (AUD, NZD, EUR), dar este mai vulnerabilă împotriva USD și CHF atunci când panica globală (Risk-Off) crește.' }
+          { title: '1. Central Bank & Governor Bailey (Driver #1)', text: 'BoE Governor Andrew Bailey warned that sticky domestic services inflation prevents policy easing. The latest MPC vote was 7–2 (2 members voted for an immediate hike), with 76% odds priced for December 17 and ~3 hikes into 2027.' },
+          { title: '2. Labor Market & Private-Sector Wage Growth', text: 'While hiring volumes are gradually cooling, UK private-sector wage settlements remain well above levels consistent with the BoE’s 2.0% inflation mandate.' },
+          { title: '3. Sovereign Bond Yields (UK Gilt 2Y)', text: 'Elevated UK 2-year Gilt yields give GBP a wide carry advantage against dovish or politically pressured peers like AUD, EUR, and CHF.' },
+          { title: '4. Risk-Off Boundary', text: 'GBP cleanly outperforms weak currencies (AUD, NZD, EUR), though it remains secondary to USD and CHF during acute global Risk-Off spikes.' }
         ],
-        flipRisk: 'O răcire bruscă a creșterii salariilor și a inflației din servicii din UK, sau o scădere severă pe bursele globale (Risk-Off extrem) care să lovească activele ciclice.',
+        flipRisk: 'A sudden slowdown in UK wage growth and services inflation, or a severe global equity sell-off (extreme Risk-Off) weighing on high-beta assets.',
         bestPairs: 'GBP/AUD Long • GBP/NZD Long • EUR/GBP Short'
       },
       JPY: {
@@ -211,14 +211,14 @@
         flag: '🇯🇵',
         bank: 'Bank of Japan (BoJ • 1.25%)',
         baseBias: 'BULLISH',
-        tagline: 'Yenul este propulsat simultan de semnalele hawkish ale guvernatorului Ueda și de închiderea masivă a pozițiilor de carry trade în regim Risk-Off.',
+        tagline: 'The Yen is propelled simultaneously by Governor Ueda’s hawkish rate-hike guidance and widespread unwinding of JPY-funded carry trades in Risk-Off.',
         reasons: [
-          { title: '1. Banca Centrală & Guvernatorul Ueda (Motorul #1)', text: 'Guvernatorul Kazuo Ueda a semnalat o nouă majorare de dobândă de la 1.25% la 1.50% pe 18 decembrie (prețuită la 78%), după ce un membru al board-ului a votat deja pentru creștere imediată.' },
-          { title: '2. Piața Muncii & Negocierile Salariale (Shunto)', text: 'Deficitul structural de forță de muncă din Japonia menține presiunea pe creșterea salariilor, oferind BoJ exact confirmarea de care are nevoie pentru a continua normalizarea dobânzilor.' },
-          { title: '3. Regimul Risk-Off & Carry Trade Unwind', text: 'Când piețele globale intră pe Risk-Off (tensiuni Ormuz, tarife China), fondurile lichidează împrumuturile ieftine în JPY și cumpără înapoi Yenul masiv.' },
-          { title: '4. Riscul Energetic', text: 'Singura frână pentru JPY este faptul că Japonia importă aproape tot petrolul și gazul, deci petrolul peste $81/bbl îi afectează balanța comercială.' }
+          { title: '1. Central Bank & Governor Ueda (Driver #1)', text: 'BoJ Governor Kazuo Ueda signaled a rate hike from 1.25% to 1.50% on December 18 (78% priced) after an 8–1 hawkish board split where one member voted for an immediate hike.' },
+          { title: '2. Tight Labor Market & Shunto Wage Momentum', text: 'Structural labor shortages in Japan keep upward pressure on corporate wages, giving the BoJ the confirmation needed to continue policy normalization.' },
+          { title: '3. Risk-Off Regime & Carry Trade Unwinding', text: 'Escalating Strait of Hormuz tensions and US–China tariffs force leveraged funds to liquidate short-JPY carry positions and buy back Yen aggressively.' },
+          { title: '4. Energy Import Headwind', text: 'Japan’s heavy reliance on imported crude oil (WTI above $81.40/bbl) is the main offsetting drag on its trade balance.' }
         ],
-        flipRisk: 'O revenire puternică pe Risk-On a burselor globale sau o amânare neașteptată a majorării de dobândă din 18 decembrie de către BoJ.',
+        flipRisk: 'A strong Risk-On rebound in global equities or an unexpected BoJ decision to delay its December 18 rate hike.',
         bestPairs: 'AUD/JPY Short • NZD/JPY Short • EUR/JPY Short'
       },
       CHF: {
@@ -226,14 +226,14 @@
         flag: '🇨🇭',
         bank: 'Swiss National Bank (SNB • 0.00%)',
         baseBias: 'BULLISH',
-        tagline: 'Francul elvețian este principalul magnet pentru capitalul defensiv european și global, fără nicio opoziție din partea Băncii Naționale a Elveției.',
+        tagline: 'The Swiss Franc is the primary magnet for European and global defensive capital, with zero FX intervention resistance from the SNB.',
         reasons: [
-          { title: '1. Refugiu Direct din Criza Franței (Motorul #1)', text: 'Blocajul bugetar din Franța (spread OAT–Bund la +84 bps) împinge banii instituționali direct din Eurozona instabilă în cel mai sigur refugiu vecin: Francul Elvețian.' },
-          { title: '2. Poziția SNB & Guvernatorul Schlegel', text: 'Președintele SNB Martin Schlegel a confirmat că banca nu intervine pentru a slăbi Francul, deoarece un CHF puternic protejează Elveția de inflația importată din energie.' },
-          { title: '3. Excedentul de Cont Curent & Stabilitatea Internă', text: 'Elveția are excedent masiv de cont curent, șomaj extrem de mic (~2.5%) și datorie publică redusă — fundament structural impecabil în vremuri de criză.' },
-          { title: '4. Regimul Global Risk-Off', text: 'Tensiunile navale din Strâmtoarea Ormuz amplifică cererea globală de Safe-Haven pentru CHF.' }
+          { title: '1. Direct Safe-Haven From French Crisis (Driver #1)', text: 'France’s parliamentary budget deadlock (OAT–Bund spread at +84 bps) channels institutional capital straight out of the Eurozone into neighboring Switzerland.' },
+          { title: '2. SNB Policy & Chairman Schlegel', text: 'SNB Chairman Martin Schlegel confirmed no FX intervention against Franc appreciation, as a firmer CHF insulates Switzerland from imported energy inflation.' },
+          { title: '3. Current Account Surplus & Domestic Stability', text: 'Switzerland boasts a massive current account surplus, ultra-low unemployment (~2.5%), and low public debt—an unmatched structural safe-haven profile.' },
+          { title: '4. Global Risk-Off Tailwind', text: 'Persian Gulf naval warnings amplify global defensive demand for CHF.' }
         ],
-        flipRisk: 'Rezolvarea crizei bugetare din Franța + detensionarea în Golful Persic (revenire pe Risk-On) sau o intervenție surpriză a SNB pe piața valutară.',
+        flipRisk: 'Resolution of France’s budget crisis plus Middle East de-escalation (Risk-On), or surprise SNB currency intervention.',
         bestPairs: 'EUR/CHF Short • AUD/CHF Short • NZD/CHF Short'
       },
       AUD: {
@@ -241,14 +241,14 @@
         flag: '🇦🇺',
         bank: 'Reserve Bank of Australia (RBA • 4.85%)',
         baseBias: 'BEARISH',
-        tagline: 'Cea mai slabă monedă din G8: singura bancă centrală prețuită pe tăieri de dobândă, piață a muncii în răcire și lovită direct de tarifele SUA–China.',
+        tagline: 'The weakest currency in the G8: the sole central bank priced for rate cuts, a cooling labor market, and direct exposure to US–China tariffs.',
         reasons: [
-          { title: '1. Banca Centrală Izolată (Motorul #1 — Divergență Maximă)', text: 'RBA este singura bancă centrală din G8 pentru care piața prețuiește 1–2 tăieri de dobândă (de la 4.85% în jos). În timp ce Fed, BoE și BoJ strâng politica, Australia merge în sens invers, iar randamentele AU 2Y au scăzut.' },
-          { title: '2. Piața Muncii & Consumul în Răcire', text: 'Creșterea angajărilor full-time din Australia încetinește, creșterea salarială se temperează, iar gospodăriile îndatorate reduc consumul sub presiunea ratelor ipotecare.' },
-          { title: '3. Expunerea pe China & Tarifele Comerciale SUA–China', text: 'Australia depinde masiv de exporturile de minereu de fier și metale către China. Noile tarife comerciale ale SUA asupra Chinei lovesc direct cererea asiatică și folosesc AUD ca principal proxy de vânzare.' },
-          { title: '4. Regimul Global Risk-Off', text: 'Fiind o monedă ciclică (high-beta), AUD este vândută automat de fonduri când cresc tensiunile geopolitice și volatilitatea.' }
+          { title: '1. Isolated Dovish Central Bank (Driver #1 — Max Divergence)', text: 'The RBA is the only G8 central bank priced for 1–2 rate cuts (down from 4.85%). While the Fed, BoE, and BoJ tighten, Australian 2Y yields have dropped sharply.' },
+          { title: '2. Cooling Labor Market & Household Consumption', text: 'Full-time employment growth in Australia is slowing, wage momentum is moderating, and heavily indebted households are cutting spending under elevated mortgage rates.' },
+          { title: '3. China Exposure & US–China Trade Tariffs', text: 'Australia relies heavily on iron ore and metal exports to China. Fresh US tariffs on Chinese goods hit Asian industrial demand and make AUD the primary G8 short proxy.' },
+          { title: '4. Global Risk-Off Regime', text: 'As a high-beta cyclical currency, AUD is systematically sold by institutional desks when geopolitical stress and volatility rise.' }
         ],
-        flipRisk: 'O surpriză mare în sus pe inflația (CPI) din Australia care să anuleze tăierile RBA, combinată cu stimulente fiscale masive în China și revenire pe Risk-On.',
+        flipRisk: 'An upside surprise in Australian CPI inflation that erases RBA cut pricing, paired with major Chinese fiscal stimulus and a global Risk-On rebound.',
         bestPairs: 'AUD/USD Short • GBP/AUD Long • AUD/CHF Short • AUD/JPY Short'
       },
       NZD: {
@@ -256,14 +256,14 @@
         flag: '🇳🇿',
         bank: 'Reserve Bank of New Zealand (RBNZ • 3.75%)',
         baseBias: 'BEARISH',
-        tagline: 'Dolarul neozeelandez suferă din cauza unei piețe a muncii slabe, a unui comitet RBNZ divizat și a presiunii comerciale din Asia-Pacific.',
+        tagline: 'The Kiwi is weighed down by a weak domestic labor market, a divided 5–2 RBNZ committee, and Asia-Pacific trade headwinds.',
         reasons: [
-          { title: '1. Piața Muncii & Economia Internă Slabă (Motorul #1)', text: 'Piața muncii din Noua Zeelandă s-a deteriorat vizibil (rata șomajului a urcat, angajările au scăzut, iar cererea internă este anemică), ceea ce blochează orice intenție de înăsprire din partea RBNZ.' },
-          { title: '2. Banca Centrală Divizată (Vot 5–2)', text: 'Comitetul RBNZ este împărțit 5–2 și adoptă o poziție prudentă (Hold la 3.75%, cu doar 34% șanse de hike), pierzând atractivitatea de carry față de USD, GBP și JPY.' },
-          { title: '3. Tarifele SUA–China & Exporturile Agricole', text: 'Încetinirea comerțului din Asia-Pacific din cauza tarifelor SUA–China afectează cererea pentru exporturile Noii Zeelande (lactate, carne, lemn).' },
-          { title: '4. Regimul Global Risk-Off', text: 'Ca monedă ciclică cu lichiditate mai mică, NZD este penalizată puternic când fondurile închid pozițiile de carry trade și fug spre USD, CHF și JPY.' }
+          { title: '1. Weak Labor Market & Domestic Economy (Driver #1)', text: 'New Zealand’s labor market has deteriorated noticeably (higher unemployment, soft hiring, and sluggish domestic demand), preventing the RBNZ from tightening policy.' },
+          { title: '2. Divided RBNZ Committee (5–2 Split)', text: 'The RBNZ remains split 5–2 with a cautious hold at 3.75% (only 34% hike odds), eroding carry appeal versus USD, GBP, and JPY.' },
+          { title: '3. US–China Tariffs & Agricultural Exports', text: 'Slower Asia-Pacific trade flows from US–China tariff escalation weigh on New Zealand’s dairy and commodity export outlook.' },
+          { title: '4. Global Risk-Off Regime', text: 'As a smaller, high-beta currency, NZD suffers heavy outflows when funds unwind carry trades into USD, CHF, and JPY.' }
         ],
-        flipRisk: 'O revenire puternică a prețurilor la lactate (GDT Auction), date peste așteptări pe piața muncii din Noua Zeelandă și un val global Risk-On.',
+        flipRisk: 'A sharp rebound in Global Dairy Trade (GDT) auction prices, stronger-than-expected NZ labor data, and a broad Risk-On rally.',
         bestPairs: 'NZD/USD Short • GBP/NZD Long • NZD/CHF Short • NZD/JPY Short'
       },
       CAD: {
@@ -271,14 +271,14 @@
         flag: '🇨🇦',
         bank: 'Bank of Canada (BoC • 3.25%)',
         baseBias: 'BULLISH',
-        tagline: 'Dolarul canadian este propulsat de discursul hawkish al guvernatorului Tiff Macklem și de raliul petrolului WTI peste $81.40/bbl.',
+        tagline: 'The Loonie is boosted by Governor Tiff Macklem’s hawkish inflation warning and WTI crude oil rallying above $81.40/bbl.',
         reasons: [
-          { title: '1. Guvernatorul Macklem & Așteptările de Hike (Motorul #1)', text: 'Guvernatorul BoC Tiff Macklem a surprins piețele avertizând că banca nu va repeta greșeala din pandemie și este gata să combată efectele de runda a doua ale scumpirii mărfurilor — urcând șansele de majorare a dobânzii în decembrie (46%+) și declanșând un short squeeze pe CAD.' },
-          { title: '2. Petrolul WTI peste $81.40/bbl & Termenii Schimbului', text: 'Ca exportator major de petrol, Canada câștigă masiv din scumpirea țițeiului cauzată de tensiunile din Strâmtoarea Ormuz, îmbunătățind balanța comercială.' },
-          { title: '3. Piața Muncii & Consumul (Limita Structurii)', text: 'Deși piața muncii și consumul gospodăriilor îndatorate din Canada au arătat semne de răcire, impulsul energetic și avertismentul pe inflație al lui Macklem domină pe termen scurt.' },
-          { title: '4. Unde Strălucește vs. Unde E Limitat', text: 'CAD bate clar monedele importatoare de energie sau dovish (EUR, AUD, NZD), dar rămâne în urma USD care are randament 2Y la 4.66% și statut Safe-Haven.' }
+          { title: '1. Governor Macklem & December Hike Pricing (Driver #1)', text: 'BoC Governor Tiff Macklem surprised markets by warning that the bank will not repeat its pandemic-era inflation mistake and is ready to counter second-round commodity price pass-through—lifting December hike odds (46%+) and sparking a CAD short squeeze.' },
+          { title: '2. WTI Crude Oil Above $81.40/bbl & Terms of Trade', text: 'As a major net oil exporter, Canada benefits directly from surging WTI crude prices driven by Strait of Hormuz tensions, improving its trade balance.' },
+          { title: '3. Labor Market & Consumer Debt (Structural Cap)', text: 'Although Canadian employment growth and indebted household consumption have softened, the energy surge and Macklem’s hawkish guidance dominate near-term pricing.' },
+          { title: '4. Cross-Pair Outperformance vs. USD Cap', text: 'CAD cleanly outperforms energy-importing and dovish peers (EUR, AUD, NZD), though it trails USD which boasts 4.66% 2Y yields and safe-haven status.' }
         ],
-        flipRisk: 'O scădere a petrolului WTI sub $74/bbl (detensionare în Golful Persic) sau un raport slab al locurilor de muncă din Canada care să șteargă așteptările de hike din decembrie.',
+        flipRisk: 'WTI crude oil falling back below $74/bbl (Persian Gulf de-escalation) or a weak Canadian jobs report erasing December rate-hike bets.',
         bestPairs: 'EUR/CAD Short • AUD/CAD Short • NZD/CAD Short'
       }
     };
@@ -638,7 +638,7 @@
       });
 
       const isBullish = score >= 0;
-      const verdictText = isBullish ? 'BULLISH ▲ (PUTERNIC)' : 'BEARISH ▼ (SLAB)';
+      const verdictText = isBullish ? 'BULLISH ▲ (STRONG)' : 'BEARISH ▼ (WEAK)';
       const verdictBadge = isBullish
         ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
         : 'bg-rose-500/20 text-rose-300 border-rose-500/40';
@@ -656,7 +656,7 @@
                 VERDICT: ${verdictText}
               </span>
               <span class="px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30 font-mono text-[11px] font-bold">
-                REGIM: RISK-OFF
+                REGIME: RISK-OFF
               </span>
             </div>
             <p class="text-xs sm:text-sm text-slate-300 italic">${profile.tagline}</p>
@@ -681,23 +681,23 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 pt-1">
           <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1 border-l-4 border-l-amber-400">
             <div class="font-mono text-xs font-extrabold uppercase text-amber-300">
-              Ultimul Catalizator Live (${latestStory ? formatRealTimeAgo(latestStory.publishedAt) : 'Live'})
+              Latest Live Catalyst (${latestStory ? formatRealTimeAgo(latestStory.publishedAt) : 'Live'})
             </div>
             <p class="text-xs text-slate-200 leading-relaxed">
-              ${latestStory ? latestStory.title : 'Monitorizare continuă a fluxurilor G8.'}
+              ${latestStory ? latestStory.title : 'Continuous G8 institutional flow monitoring active.'}
             </p>
           </div>
 
           <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1 border-l-4 border-l-sky-500">
             <div class="font-mono text-xs font-extrabold uppercase text-sky-400">
-              Ce ar putea întoarce ${activeAsset} (Invalidarea)
+              What Would Flip ${activeAsset} (Invalidation)
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">${profile.flipRisk}</p>
           </div>
 
           <div class="bg-[#060913] border border-slate-800 rounded-xl p-3.5 space-y-1 border-l-4 border-l-indigo-500">
             <div class="font-mono text-xs font-extrabold uppercase text-indigo-400">
-              Cele mai clare perechi (Divergență Maximă)
+              Cleanest FX Pairs (Maximum Divergence)
             </div>
             <p class="text-xs sm:text-sm font-mono font-bold text-white leading-relaxed">${profile.bestPairs}</p>
           </div>
