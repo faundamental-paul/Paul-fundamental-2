@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T22:33:26.824466+00:00",
+  "updatedAt": "2026-11-28T04:36:52.308912+00:00",
   "storyCount": 40,
   "stories": [
     {
@@ -8,7 +8,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245797+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867458+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -30,7 +30,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245751+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867413+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -56,7 +56,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245712+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867376+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -82,7 +82,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245668+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867332+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -108,7 +108,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245639+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867304+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -134,7 +134,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245600+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867265+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -160,7 +160,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245562+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867227+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -186,7 +186,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245526+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867191+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -208,7 +208,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245484+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867149+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -230,7 +230,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-27T22:33:27.245378+00:00",
+      "publishedAt": "2026-11-28T04:36:52.867044+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -247,17 +247,17 @@
       "summaryEn": "There's never an easy time to be a central banker. But whisper it, new ECB President Pablo Hernández de Cos may just have picked the perfect moment to take charge, writes James Smith"
     },
     {
-      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+      "title": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
+      "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
       "sources": [
-        "CNBC Economy & Central Banks"
+        "MarketWatch Top Stories"
       ],
-      "publishedAt": "2026-11-27T21:45:41+00:00",
+      "publishedAt": "2026-11-28T00:00:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "47m ago",
-      "timeLabel": "47m ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
+      "timeAgo": "4h ago",
+      "timeLabel": "4h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
       "impact": 8,
       "impactScore": 8,
       "currencyImpacts": [
@@ -266,7 +266,51 @@
           "dir": "BULLISH"
         }
       ],
-      "summaryEn": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets."
+      "summaryEn": "“Given my age, I never make a major new purchase without thinking about the future.”"
+    },
+    {
+      "title": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
+      "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T23:30:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "5h ago",
+      "timeLabel": "5h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Doing nothing and maintaining an even temperament is often the work of gods."
+    },
+    {
+      "title": "Clearing out my parents’ house was a legal nightmare. How can I downsize without putting my kids through the same ordeal?",
+      "url": "https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-27T23:15:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "5h ago",
+      "timeLabel": "5h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Some countercultural advice this Black Friday: stop buying stuff, plus other rules for downsizing."
     },
     {
       "title": "OpenAI countersues Apple for stealing trade secrets",
@@ -274,10 +318,10 @@
       "sources": [
         "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-27T20:52:32+00:00",
+      "publishedAt": "2026-11-27T23:07:13+00:00",
       "daysAgo": 0,
-      "timeAgo": "1h ago",
-      "timeLabel": "1h ago",
+      "timeAgo": "5h ago",
+      "timeLabel": "5h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -291,6 +335,28 @@
       "summaryEn": "Apple in July sued OpenAI and two former employees, alleging misappropriation of its trade secrets to benefit the ChatGPT owner's foray into consumer hardware."
     },
     {
+      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+      "sources": [
+        "CNBC Economy & Central Banks"
+      ],
+      "publishedAt": "2026-11-27T21:45:41+00:00",
+      "daysAgo": 0,
+      "timeAgo": "6h ago",
+      "timeLabel": "6h ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets."
+    },
+    {
       "title": "These stocks soared the most during a wild week highlighted by Huang’s return to Nvidia",
       "url": "https://www.marketwatch.com/story/these-stocks-soared-the-most-during-a-wild-week-highlighted-by-huangs-return-to-nvidia-578b3f9a?mod=mw_rss_topstories",
       "sources": [
@@ -298,8 +364,8 @@
       ],
       "publishedAt": "2026-11-27T20:16:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "2h ago",
-      "timeLabel": "2h ago",
+      "timeAgo": "8h ago",
+      "timeLabel": "8h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -320,8 +386,8 @@
       ],
       "publishedAt": "2026-11-27T20:03:08+00:00",
       "daysAgo": 0,
-      "timeAgo": "2h ago",
-      "timeLabel": "2h ago",
+      "timeAgo": "8h ago",
+      "timeLabel": "8h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -342,8 +408,8 @@
       ],
       "publishedAt": "2026-11-27T19:55:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "2h ago",
-      "timeLabel": "2h ago",
+      "timeAgo": "8h ago",
+      "timeLabel": "8h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -364,8 +430,8 @@
       ],
       "publishedAt": "2026-11-27T18:40:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "3h ago",
-      "timeLabel": "3h ago",
+      "timeAgo": "9h ago",
+      "timeLabel": "9h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -386,8 +452,8 @@
       ],
       "publishedAt": "2026-11-27T18:24:06+00:00",
       "daysAgo": 0,
-      "timeAgo": "4h ago",
-      "timeLabel": "4h ago",
+      "timeAgo": "10h ago",
+      "timeLabel": "10h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -408,8 +474,8 @@
       ],
       "publishedAt": "2026-11-27T18:20:32+00:00",
       "daysAgo": 0,
-      "timeAgo": "4h ago",
-      "timeLabel": "4h ago",
+      "timeAgo": "10h ago",
+      "timeLabel": "10h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -430,8 +496,8 @@
       ],
       "publishedAt": "2026-11-27T18:11:52+00:00",
       "daysAgo": 0,
-      "timeAgo": "4h ago",
-      "timeLabel": "4h ago",
+      "timeAgo": "10h ago",
+      "timeLabel": "10h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -445,28 +511,6 @@
       "summaryEn": "U.S. equities rose on Friday as investors wrapped up a turbulent, holiday-shortened trading week."
     },
     {
-      "title": "Clearing out my parents’ house was a legal nightmare. How can I downsize without putting my kids through the same ordeal?",
-      "url": "https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-27T17:31:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Some countercultural advice this Black Friday: stop buying stuff, plus other rules for downsizing."
-    },
-    {
       "title": "12 days of sardines and Croc charms: Are Advent calendars getting out of control?",
       "url": "https://www.marketwatch.com/story/12-days-of-sardines-and-croc-charms-are-advent-calendars-getting-out-of-control-81f24548?mod=mw_rss_topstories",
       "sources": [
@@ -474,8 +518,8 @@
       ],
       "publishedAt": "2026-11-27T17:04:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
+      "timeAgo": "11h ago",
+      "timeLabel": "11h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -496,8 +540,8 @@
       ],
       "publishedAt": "2026-11-27T16:00:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "6h ago",
-      "timeLabel": "6h ago",
+      "timeAgo": "12h ago",
+      "timeLabel": "12h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -518,8 +562,8 @@
       ],
       "publishedAt": "2026-11-27T15:45:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "6h ago",
-      "timeLabel": "6h ago",
+      "timeAgo": "12h ago",
+      "timeLabel": "12h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -540,8 +584,8 @@
       ],
       "publishedAt": "2026-11-27T15:30:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "7h ago",
-      "timeLabel": "7h ago",
+      "timeAgo": "13h ago",
+      "timeLabel": "13h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -555,50 +599,6 @@
       "summaryEn": "“He explained that he wasn’t trying to hide the payment, but his former wife lost her job in a medical billing company.”"
     },
     {
-      "title": "My friends play ‘credit-card roulette’ to see who pays for dinner — but one ‘winner’ still Venmoed me afterward. Should I say something?",
-      "url": "https://www.marketwatch.com/story/my-friends-play-credit-card-roulette-to-see-who-pays-for-dinner-but-one-winner-still-venmoed-me-afterward-should-i-say-something-0a657eee?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-27T15:04:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "7h ago",
-      "timeLabel": "7h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "‘I was stunned! I’ve lost my fair share, and won my fair share, and truly believe it all evens out over time.’"
-    },
-    {
-      "title": "Artificial intelligence usage is exploding, yet spending is stalling. Why a foundational rule of economics is breaking.",
-      "url": "https://www.marketwatch.com/story/artificial-intelligence-usage-is-exploding-yet-spending-is-stalling-why-a-foundational-rule-of-economics-is-breaking-9c7ad4b3?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-27T15:01:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "7h ago",
-      "timeLabel": "7h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "For frontier model lab developers, the increased consumption of AI tokens (the means by which they get paid for their compute) is a positive. However, they  don’t seem to be generating  revenues from it at the same rate."
-    },
-    {
       "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
       "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
       "sources": [
@@ -606,8 +606,8 @@
       ],
       "publishedAt": "2026-11-27T14:52:40+00:00",
       "daysAgo": 0,
-      "timeAgo": "7h ago",
-      "timeLabel": "7h ago",
+      "timeAgo": "13h ago",
+      "timeLabel": "13h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -628,8 +628,8 @@
       ],
       "publishedAt": "2026-11-27T14:00:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "8h ago",
-      "timeLabel": "8h ago",
+      "timeAgo": "14h ago",
+      "timeLabel": "14h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -650,8 +650,8 @@
       ],
       "publishedAt": "2026-11-27T13:08:07+00:00",
       "daysAgo": 0,
-      "timeAgo": "9h ago",
-      "timeLabel": "9h ago",
+      "timeAgo": "15h ago",
+      "timeLabel": "15h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -672,8 +672,8 @@
       ],
       "publishedAt": "2026-11-27T13:00:42+00:00",
       "daysAgo": 0,
-      "timeAgo": "9h ago",
-      "timeLabel": "9h ago",
+      "timeAgo": "15h ago",
+      "timeLabel": "15h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -694,8 +694,8 @@
       ],
       "publishedAt": "2026-11-27T09:44:38+00:00",
       "daysAgo": 0,
-      "timeAgo": "12h ago",
-      "timeLabel": "12h ago",
+      "timeAgo": "18h ago",
+      "timeLabel": "18h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -716,8 +716,8 @@
       ],
       "publishedAt": "2026-11-27T09:00:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "13h ago",
-      "timeLabel": "13h ago",
+      "timeAgo": "19h ago",
+      "timeLabel": "19h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -738,8 +738,8 @@
       ],
       "publishedAt": "2026-11-27T08:47:36+00:00",
       "daysAgo": 0,
-      "timeAgo": "13h ago",
-      "timeLabel": "13h ago",
+      "timeAgo": "19h ago",
+      "timeLabel": "19h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -760,8 +760,8 @@
       ],
       "publishedAt": "2026-11-27T08:05:09+00:00",
       "daysAgo": 0,
-      "timeAgo": "14h ago",
-      "timeLabel": "14h ago",
+      "timeAgo": "20h ago",
+      "timeLabel": "20h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -783,8 +783,8 @@
       ],
       "publishedAt": "2026-11-27T06:50:38+00:00",
       "daysAgo": 0,
-      "timeAgo": "15h ago",
-      "timeLabel": "15h ago",
+      "timeAgo": "21h ago",
+      "timeLabel": "21h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -805,8 +805,8 @@
       ],
       "publishedAt": "2026-11-27T06:09:51+00:00",
       "daysAgo": 0,
-      "timeAgo": "16h ago",
-      "timeLabel": "16h ago",
+      "timeAgo": "22h ago",
+      "timeLabel": "22h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -827,8 +827,8 @@
       ],
       "publishedAt": "2026-11-27T05:46:04+00:00",
       "daysAgo": 0,
-      "timeAgo": "16h ago",
-      "timeLabel": "16h ago",
+      "timeAgo": "22h ago",
+      "timeLabel": "22h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -848,9 +848,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-27T04:07:07+00:00",
-      "daysAgo": 0,
-      "timeAgo": "18h ago",
-      "timeLabel": "18h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -870,9 +870,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-27T03:30:23+00:00",
-      "daysAgo": 0,
-      "timeAgo": "19h ago",
-      "timeLabel": "19h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -892,9 +892,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-27T00:22:29+00:00",
-      "daysAgo": 0,
-      "timeAgo": "22h ago",
-      "timeLabel": "22h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
