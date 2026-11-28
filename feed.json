@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T04:36:52.308912+00:00",
+  "updatedAt": "2026-11-28T13:58:23.605678+00:00",
   "storyCount": 40,
   "stories": [
     {
@@ -8,7 +8,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867458+00:00",
+      "publishedAt": "2026-11-28T13:58:24.275015+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -30,7 +30,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867413+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274967+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -56,7 +56,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867376+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274928+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -82,7 +82,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867332+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274883+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -108,7 +108,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867304+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274855+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -134,7 +134,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867265+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274816+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -160,7 +160,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867227+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274778+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -186,7 +186,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867191+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274742+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -208,7 +208,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867149+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274699+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -230,7 +230,7 @@
       "sources": [
         "ING Think FX & Macro"
       ],
-      "publishedAt": "2026-11-28T04:36:52.867044+00:00",
+      "publishedAt": "2026-11-28T13:58:24.274592+00:00",
       "daysAgo": 0,
       "timeAgo": "1m ago",
       "timeLabel": "1m ago",
@@ -247,26 +247,30 @@
       "summaryEn": "There's never an easy time to be a central banker. But whisper it, new ECB President Pablo Hernández de Cos may just have picked the perfect moment to take charge, writes James Smith"
     },
     {
-      "title": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
-      "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+      "title": "The Iran war could shatter rising expectations of surplus oil supply in coming months",
+      "url": "https://www.cnbc.com/2026/11/28/oil-price-iran-war-strait-hormuz-surplus.html",
       "sources": [
-        "MarketWatch Top Stories"
+        "CNBC World & Geopolitics"
       ],
-      "publishedAt": "2026-11-28T00:00:00+00:00",
+      "publishedAt": "2026-11-28T13:50:51+00:00",
       "daysAgo": 0,
-      "timeAgo": "4h ago",
-      "timeLabel": "4h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
+      "timeAgo": "7m ago",
+      "timeLabel": "7m ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
       "impact": 8,
       "impactScore": 8,
       "currencyImpacts": [
         {
           "code": "USD",
           "dir": "BULLISH"
+        },
+        {
+          "code": "CAD",
+          "dir": "BULLISH"
         }
       ],
-      "summaryEn": "“Given my age, I never make a major new purchase without thinking about the future.”"
+      "summaryEn": "Oil prices have sold off in November as investors see a recovery in Middle East exports leading to surpluses for the first time since the war began."
     },
     {
       "title": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
@@ -274,10 +278,10 @@
       "sources": [
         "MarketWatch Top Stories"
       ],
-      "publishedAt": "2026-11-27T23:30:00+00:00",
+      "publishedAt": "2026-11-28T13:30:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
+      "timeAgo": "28m ago",
+      "timeLabel": "28m ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -296,10 +300,10 @@
       "sources": [
         "MarketWatch Top Stories"
       ],
-      "publishedAt": "2026-11-27T23:15:00+00:00",
+      "publishedAt": "2026-11-28T13:00:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
+      "timeAgo": "58m ago",
+      "timeLabel": "58m ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -313,6 +317,169 @@
       "summaryEn": "Some countercultural advice this Black Friday: stop buying stuff, plus other rules for downsizing."
     },
     {
+      "title": "These tech stocks may let you play defense without giving up on AI",
+      "url": "https://www.marketwatch.com/story/these-tech-stocks-may-let-you-play-defense-without-giving-up-on-ai-523ce26d?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-28T12:30:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "1h ago",
+      "timeLabel": "1h ago",
+      "category": "GEOPOLITICS",
+      "horizon": "SHORT",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Amphenol, CDW, Sensata Technologies and TE Connectivity stood out when an Evercore analyst did a stress test of the hardware-related stocks he covers."
+    },
+    {
+      "title": "Musk says Google is interested in renting more computing capacity from SpaceX",
+      "url": "https://www.cnbc.com/2026/11/28/musk-says-google-wants-to-rent-more-computing-capacity-from-spacex.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-28T10:50:44+00:00",
+      "daysAgo": 0,
+      "timeAgo": "3h ago",
+      "timeLabel": "3h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Demand for computing infrastructure has surged since generative AI services were introduced, prompting technology companies to invest heavily in data centers."
+    },
+    {
+      "title": "U.S. military repelled drones at UK airbase this month, FT reports",
+      "url": "https://www.cnbc.com/2026/11/28/us-military-repelled-drones-at-uk-airbase-this-month-ft-reports.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-28T07:40:14+00:00",
+      "daysAgo": 0,
+      "timeAgo": "6h ago",
+      "timeLabel": "6h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        },
+        {
+          "code": "GBP",
+          "dir": "BULLISH"
+        },
+        {
+          "code": "AUD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "The newspaper, citing people familiar with the matter, said the U.S. deployed counter-drone technology to repel the unmanned aerial systems."
+    },
+    {
+      "title": "Defense company Chemring protects NATO fleets. Here's why an activist investor wants it to break up",
+      "url": "https://www.cnbc.com/2026/11/28/defense-nato-activist-investor.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-28T06:15:09+00:00",
+      "daysAgo": 0,
+      "timeAgo": "7h ago",
+      "timeLabel": "7h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "A hedge fund activist says a Chemring overhaul could unlock up to 80% share upside in the defense stock."
+    },
+    {
+      "title": "Saudi Arabia shifts Vision 2030 spending amid economic and security pressure",
+      "url": "https://www.cnbc.com/2026/11/28/saudi-arabia-vision-2030-spending.html",
+      "sources": [
+        "CNBC Economy & Central Banks",
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-28T06:00:01+00:00",
+      "daysAgo": 0,
+      "timeAgo": "7h ago",
+      "timeLabel": "7h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "The Kingdom is moving from \"spending and delivery at any cost\" to \"spending and delivery at the right cost,\" Economic Minister Faisal Alibrahim told CNBC."
+    },
+    {
+      "title": "Africa’s richest man is taking his mega-refinery public in a blockbuster IPO",
+      "url": "https://www.cnbc.com/2026/11/28/dangote-refinery-oil-ipo-nigeria-africa-energy.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-28T06:00:01+00:00",
+      "daysAgo": 0,
+      "timeAgo": "7h ago",
+      "timeLabel": "7h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "Dangote Refinery’s IPO could value the company at about $47 billion, in what is expected to be Africa’s biggest stock market listing."
+    },
+    {
+      "title": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
+      "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+      "sources": [
+        "MarketWatch Top Stories"
+      ],
+      "publishedAt": "2026-11-28T00:00:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "13h ago",
+      "timeLabel": "13h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "“Given my age, I never make a major new purchase without thinking about the future.”"
+    },
+    {
       "title": "OpenAI countersues Apple for stealing trade secrets",
       "url": "https://www.cnbc.com/2026/11/27/openai-countersues-apple-for-stealing-trade-secrets-ft-reports.html",
       "sources": [
@@ -320,8 +487,8 @@
       ],
       "publishedAt": "2026-11-27T23:07:13+00:00",
       "daysAgo": 0,
-      "timeAgo": "5h ago",
-      "timeLabel": "5h ago",
+      "timeAgo": "14h ago",
+      "timeLabel": "14h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -342,8 +509,8 @@
       ],
       "publishedAt": "2026-11-27T21:45:41+00:00",
       "daysAgo": 0,
-      "timeAgo": "6h ago",
-      "timeLabel": "6h ago",
+      "timeAgo": "16h ago",
+      "timeLabel": "16h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -364,8 +531,8 @@
       ],
       "publishedAt": "2026-11-27T20:16:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "8h ago",
-      "timeLabel": "8h ago",
+      "timeAgo": "17h ago",
+      "timeLabel": "17h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -379,28 +546,6 @@
       "summaryEn": "Nvidia’s stock soared this week, but was still down nearly 28% for November and 21% for 2026."
     },
     {
-      "title": "Hackers breach U.S. Air Force flagship Cloud One computing platform",
-      "url": "https://www.cnbc.com/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-27T20:03:08+00:00",
-      "daysAgo": 0,
-      "timeAgo": "8h ago",
-      "timeLabel": "8h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "The intrusion was discovered within the past month or so during work to upgrade the system, people familiar with the matter told Reuters."
-    },
-    {
       "title": "Coming next year: Medicare Advantage plans without drug coverage for almost 640,000 people and fewer choices for the rest",
       "url": "https://www.marketwatch.com/story/coming-next-year-medicare-advantage-plans-without-drug-coverage-for-almost-640-000-people-and-fewer-choices-for-the-rest-25242d69?mod=mw_rss_topstories",
       "sources": [
@@ -408,8 +553,8 @@
       ],
       "publishedAt": "2026-11-27T19:55:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "8h ago",
-      "timeLabel": "8h ago",
+      "timeAgo": "18h ago",
+      "timeLabel": "18h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -430,8 +575,8 @@
       ],
       "publishedAt": "2026-11-27T18:40:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "9h ago",
-      "timeLabel": "9h ago",
+      "timeAgo": "19h ago",
+      "timeLabel": "19h ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -445,28 +590,6 @@
       "summaryEn": "Also in Weekend Reads: Important tips for Medicare enrollment, how to spot online shopping scams and marital advice from The Moneyist."
     },
     {
-      "title": "SpaceX shares jump over 4% amid tech rally and after Musk says he will expand on Trump Account share donations",
-      "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-27T18:24:06+00:00",
-      "daysAgo": 0,
-      "timeAgo": "10h ago",
-      "timeLabel": "10h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "SpaceX shares jumped in trading Friday after Elon Musk said on X that he would donate shares to American children every year."
-    },
-    {
       "title": "Budget airline Norse Atlantic files for bankruptcy in Europe after failing to secure funding",
       "url": "https://www.cnbc.com/2026/11/27/norse-atlantic-bankruptcy-fuel-costs.html",
       "sources": [
@@ -474,8 +597,8 @@
       ],
       "publishedAt": "2026-11-27T18:20:32+00:00",
       "daysAgo": 0,
-      "timeAgo": "10h ago",
-      "timeLabel": "10h ago",
+      "timeAgo": "19h ago",
+      "timeLabel": "19h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -496,8 +619,8 @@
       ],
       "publishedAt": "2026-11-27T18:11:52+00:00",
       "daysAgo": 0,
-      "timeAgo": "10h ago",
-      "timeLabel": "10h ago",
+      "timeAgo": "19h ago",
+      "timeLabel": "19h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -518,8 +641,8 @@
       ],
       "publishedAt": "2026-11-27T17:04:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "11h ago",
-      "timeLabel": "11h ago",
+      "timeAgo": "20h ago",
+      "timeLabel": "20h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -540,8 +663,8 @@
       ],
       "publishedAt": "2026-11-27T16:00:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "12h ago",
-      "timeLabel": "12h ago",
+      "timeAgo": "21h ago",
+      "timeLabel": "21h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -555,6 +678,28 @@
       "summaryEn": "“Retirement is a financial status, not an age.”"
     },
     {
+      "title": "Trump demands probe into 'record setting error' after third-quarter GDP data gets massive revision higher",
+      "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+      "sources": [
+        "CNBC World & Geopolitics"
+      ],
+      "publishedAt": "2026-11-27T15:52:00+00:00",
+      "daysAgo": 0,
+      "timeAgo": "22h ago",
+      "timeLabel": "22h ago",
+      "category": "MONETARY",
+      "horizon": "MEDIUM",
+      "impact": 8,
+      "impactScore": 8,
+      "currencyImpacts": [
+        {
+          "code": "USD",
+          "dir": "BULLISH"
+        }
+      ],
+      "summaryEn": "President Donald Trump on Thursday deemed the latest gross domestic product revision a mistake, claiming that it should be \"immediately investigated.\""
+    },
+    {
       "title": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
       "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
       "sources": [
@@ -562,8 +707,8 @@
       ],
       "publishedAt": "2026-11-27T15:45:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "12h ago",
-      "timeLabel": "12h ago",
+      "timeAgo": "22h ago",
+      "timeLabel": "22h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -577,50 +722,6 @@
       "summaryEn": "“My wife stopped working outside the home in 1970.”"
     },
     {
-      "title": "My husband secretly sends his ex-wife $1,500 a month after she lost her job. We have $2.4 million saved. Has he lied by omission?",
-      "url": "https://www.marketwatch.com/story/my-husband-secretly-sends-his-ex-wife-1-500-a-month-after-she-lost-her-job-we-have-2-4-million-saved-has-he-lied-by-omission-ede1972a?mod=mw_rss_topstories",
-      "sources": [
-        "MarketWatch Top Stories"
-      ],
-      "publishedAt": "2026-11-27T15:30:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "13h ago",
-      "timeLabel": "13h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "“He explained that he wasn’t trying to hide the payment, but his former wife lost her job in a medical billing company.”"
-    },
-    {
-      "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
-      "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-27T14:52:40+00:00",
-      "daysAgo": 0,
-      "timeAgo": "13h ago",
-      "timeLabel": "13h ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI."
-    },
-    {
       "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
       "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261127~13ecadc0f2.en.html",
       "sources": [
@@ -628,8 +729,8 @@
       ],
       "publishedAt": "2026-11-27T14:00:00+00:00",
       "daysAgo": 0,
-      "timeAgo": "14h ago",
-      "timeLabel": "14h ago",
+      "timeAgo": "23h ago",
+      "timeLabel": "23h ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -649,9 +750,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-27T13:08:07+00:00",
-      "daysAgo": 0,
-      "timeAgo": "15h ago",
-      "timeLabel": "15h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -671,9 +772,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-27T13:00:42+00:00",
-      "daysAgo": 0,
-      "timeAgo": "15h ago",
-      "timeLabel": "15h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -693,9 +794,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-27T09:44:38+00:00",
-      "daysAgo": 0,
-      "timeAgo": "18h ago",
-      "timeLabel": "18h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -715,9 +816,9 @@
         "ECB Press & Speeches"
       ],
       "publishedAt": "2026-11-27T09:00:00+00:00",
-      "daysAgo": 0,
-      "timeAgo": "19h ago",
-      "timeLabel": "19h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -737,9 +838,9 @@
         "CNBC Economy & Central Banks"
       ],
       "publishedAt": "2026-11-27T08:47:36+00:00",
-      "daysAgo": 0,
-      "timeAgo": "19h ago",
-      "timeLabel": "19h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -753,38 +854,15 @@
       "summaryEn": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model."
     },
     {
-      "title": "Private markets are more accessible than ever for investors. Getting out is another matter",
-      "url": "https://www.cnbc.com/2026/11/27/private-markets-retail-investors-liquidity.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-27T08:05:09+00:00",
-      "daysAgo": 0,
-      "timeAgo": "20h ago",
-      "timeLabel": "20h ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Retail access to private markets is growing, but PwC says education lags as redemption limits put liquidity risks in focus."
-    },
-    {
       "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
       "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
       "sources": [
-        "CNBC Economy & Central Banks",
-        "CNBC World & Geopolitics"
+        "CNBC Economy & Central Banks"
       ],
       "publishedAt": "2026-11-27T06:50:38+00:00",
-      "daysAgo": 0,
-      "timeAgo": "21h ago",
-      "timeLabel": "21h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -804,9 +882,9 @@
         "CNBC Economy & Central Banks"
       ],
       "publishedAt": "2026-11-27T06:09:51+00:00",
-      "daysAgo": 0,
-      "timeAgo": "22h ago",
-      "timeLabel": "22h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "GEOPOLITICS",
       "horizon": "SHORT",
       "impact": 8,
@@ -826,9 +904,9 @@
         "CNBC World & Geopolitics"
       ],
       "publishedAt": "2026-11-27T05:46:04+00:00",
-      "daysAgo": 0,
-      "timeAgo": "22h ago",
-      "timeLabel": "22h ago",
+      "daysAgo": 1,
+      "timeAgo": "1d ago",
+      "timeLabel": "1d ago",
       "category": "MONETARY",
       "horizon": "MEDIUM",
       "impact": 8,
@@ -840,72 +918,6 @@
         }
       ],
       "summaryEn": "Nike, Adidas and Puma are betting big on Formula 1 as the sport's cultural influence grows and younger audiences fuel its appeal."
-    },
-    {
-      "title": "This 170-year historical study says ‘major market collapse’ is coming",
-      "url": "https://www.cnbc.com/2026/11/27/ai-bubble-burst-market-study.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-27T04:07:07+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "The artificial intelligence boom is flashing warning signs of speculative excess that rival those seen at the height of the dot-com bubble."
-    },
-    {
-      "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
-      "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-27T03:30:23+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "GEOPOLITICS",
-      "horizon": "SHORT",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Iran's foreign minister Abbas Araghchi said \"The incident is suspicious and looks like a precooked recipe for war.\""
-    },
-    {
-      "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
-      "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
-      "sources": [
-        "CNBC World & Geopolitics"
-      ],
-      "publishedAt": "2026-11-27T00:22:29+00:00",
-      "daysAgo": 1,
-      "timeAgo": "1d ago",
-      "timeLabel": "1d ago",
-      "category": "MONETARY",
-      "horizon": "MEDIUM",
-      "impact": 8,
-      "impactScore": 8,
-      "currencyImpacts": [
-        {
-          "code": "USD",
-          "dir": "BULLISH"
-        }
-      ],
-      "summaryEn": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms."
     }
   ]
 }
